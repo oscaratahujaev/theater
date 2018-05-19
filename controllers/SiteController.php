@@ -2,6 +2,8 @@
 
 namespace app\controllers;
 
+use app\models\SignupForm;
+use app\models\User;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -72,6 +74,7 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+        $this->layout = "../../modules/admin/views/layouts/default";
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -126,4 +129,34 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionSignup()
+    {
+        $this->layout = "../../modules/admin/views/layouts/default";
+
+        if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+
+        $model = new SignupForm();
+        if ($model->load(Yii::$app->request->post())) {
+            if ($user = $model->signup()) {
+
+                $duration = 3600 * 24; // one day
+                if (Yii::$app->getUser()->login($user, $duration)) {
+                    Yii::$app->session->setFlash('warning', User::MESSAGE_REGISTERED_NOT_CONFIRMED);
+                    return $this->goHome();
+                } else {
+                    return $this->render('signup', [
+                        'model' => $model,
+                    ]);
+                }
+            }
+        }
+
+        return $this->render('signup', [
+            'model' => $model,
+        ]);
+    }
+
 }
