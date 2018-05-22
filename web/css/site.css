@@ -118,3 +118,23 @@ a.desc:after {
     width: 90%;
     margin-right: 5%;
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.language {
+    display: inline-flex;
+    position: relative;
+    top: 11px;
+    left: 20px;
+}
+
+.language a {
+    padding: 3px;
+}
+
+/*.artist-image-wrapper {
+    height: 200px;
+}*/

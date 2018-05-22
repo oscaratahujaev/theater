@@ -22,7 +22,8 @@
         "2amigos/yii2-ckeditor-widget": "^2.1",
         "mihaildev/yii2-elfinder": "*",
         "nsept/yii2-cyrillic-slug-behavior": "*",
-        "kartik-v/yii2-widget-datepicker": "@dev"
+        "kartik-v/yii2-widget-datepicker": "@dev",
+        "kartik-v/yii2-widget-datetimepicker": "^1.4"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

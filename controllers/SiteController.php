@@ -2,6 +2,9 @@
 
 namespace app\controllers;
 
+use app\models\Artists;
+use app\models\Performance;
+use app\models\Repertuar;
 use app\models\SignupForm;
 use app\models\User;
 use Yii;
@@ -64,7 +67,15 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $this->layout = "home.php";
-        return $this->render('index');
+
+        $performances = Performance::find()->where(['status' => 1])->limit(3)->all();
+        $repertoires = Repertuar::find()->where(['status' => 1])->limit(4)->all();
+        $actors = Artists::find()->limit(4)->all();
+        return $this->render('index', [
+            'performances' => $performances,
+            'repertoires' => $repertoires,
+            'artists' => $actors,
+        ]);
     }
 
     /**

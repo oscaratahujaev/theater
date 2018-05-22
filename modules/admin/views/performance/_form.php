@@ -11,7 +11,7 @@ use yii\widgets\ActiveForm;
 
 <div class="performance-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
@@ -30,7 +30,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'author')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'status')->dropDownList(Functions::getStatus()) ?>
-
+    <?= $form->field($model, 'mainPhoto')->fileInput([]) ?>
 
     <?php if (!Yii::$app->request->isAjax) { ?>
         <div class="form-group">

@@ -320,427 +320,75 @@ $this->title = 'My Yii Application';
                 <article class="post_content">
                     <div class="post_text_area">
                         <!--Service Icons-->
-                        <br>
-                        <div class="container">
-                            <div class="sc_content main ">
-                                <div class="aligncenter margin_bottom_middle">
-                                    <h2 class="sc_title style_2 sc_title_regular">Our Classes</h2>
-                                    <h4 class="sc_undertitle style_1">We design digital toys not just for kids, but with
-                                        kids</h4>
-                                </div>
-                                <div class="sc_blogger sc_blogger_horizontal style_image style_image_classes">
-                                    <div class="columnsWrap">
-                                        <div class="columns1_3 column_item_1 odd first">
-                                            <article class="sc_blogger_item">
-                                                <div class="thumb">
-                                                    <a href="#">
-                                                        <img alt="Babysitting: Dealing With Temper Tantrums"
-                                                             src="images/kidscare-17-714x402.jpg">
-                                                        <div class="sc_blogger_content">
-                                                            <div class="sc_blogger_content_inner">Nunc ac justo
-                                                                hendrerit, elementum nisi elementum, semper arcu. Nam
-                                                                egestas pellentesque...
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <h4 class="sc_blogger_title sc_title">
-                                                    <a href="#">Babysitting: Dealing With Temper Tantrums</a>
-                                                </h4>
-                                                <div class="reviews_summary blog_reviews">
-                                                    <div class="classes_price">
-                                                        <p>$185
-                                                            <strong>/mo</strong>
-                                                        </p>
-                                                    </div>
-                                                    <div class="criteria_summary criteria_row">
-                                                        <div class="ratingItem" data-mark="50">
-                                                            <div class="starDefault">
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                            </div>
-                                                            <div class="starHover">
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="sc_blogger_content">
-                                                </div>
-                                                <div class="sc_blogger_info">
-                                                    <div class="squareButton light ico sc_blogger_more">
-                                                        <a class="icon-link" title="" href="#">More</a>
-                                                    </div>
-                                                    <div class="sc_blogger_author">
-                                                        Posted by
-                                                        <a href="#" class="post_author">admin</a>
-                                                        <span class="separator">|</span>
-                                                        Views
-                                                        <span class="comments_number">176</span>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div class="columns1_3 column_item_2 even">
-                                            <article class="sc_blogger_item">
-                                                <div class="thumb">
-                                                    <a href="#">
-                                                        <img alt="10 Healthy Lunch Ideas for Kids"
-                                                             src="images/kidscare-25-714x402.jpg">
-                                                        <div class="sc_blogger_content">
-                                                            <div class="sc_blogger_content_inner">Hello All, Firstly,
-                                                                thank you so much for the great template! I have spent
-                                                                around 10hrs looking...
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <h4 class="sc_blogger_title sc_title">
-                                                    <a href="#">10 Healthy Lunch Ideas for Kids</a>
-                                                </h4>
-                                                <div class="reviews_summary blog_reviews">
-                                                    <div class="classes_price">
-                                                        <p>$185
-                                                            <strong>/mo</strong>
-                                                        </p>
-                                                    </div>
-                                                    <div class="criteria_summary criteria_row">
-                                                        <div class="ratingItem" data-mark="60">
-                                                            <div class="starDefault">
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                            </div>
-                                                            <div class="starHover">
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="sc_blogger_content">
-                                                </div>
-                                                <div class="sc_blogger_info">
-                                                    <div class="squareButton light ico sc_blogger_more">
-                                                        <a class="icon-link" title="" href="#">More</a>
-                                                    </div>
-                                                    <div class="sc_blogger_author">
-                                                        Posted by
-                                                        <a href="#" class="post_author">admin</a>
-                                                        <span class="separator">|</span>
-                                                        Views
-                                                        <span class="comments_number">228</span>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div class="columns1_3 column_item_3 odd">
-                                            <article class="sc_blogger_item">
-                                                <div class="thumb">
-                                                    <a href="#">
-                                                        <img alt="Common Vaccination Myths Busted"
-                                                             src="images/kidscare-11-714x402.jpg">
-                                                        <div class="sc_blogger_content">
-                                                            <div class="sc_blogger_content_inner">
-                                                                <p>Best purchase i made in envato.</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <h4 class="sc_blogger_title sc_title">
-                                                    <a href="#">Common Vaccination Myths Busted</a>
-                                                </h4>
-                                                <div class="reviews_summary blog_reviews">
-                                                    <div class="classes_price">
-                                                        <p>$200</p>
-                                                    </div>
-                                                    <div class="criteria_summary criteria_row">
-                                                        <div class="ratingItem" data-mark="70">
-                                                            <div class="starDefault">
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                            </div>
-                                                            <div class="starHover">
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="sc_blogger_content">
-                                                </div>
-                                                <div class="sc_blogger_info">
-                                                    <div class="squareButton light ico sc_blogger_more">
-                                                        <a class="icon-link" title="" href="#">More</a>
-                                                    </div>
-                                                    <div class="sc_blogger_author">
-                                                        Posted by
-                                                        <a href="#" class="post_author">admin</a>
-                                                        <span class="separator">|</span>
-                                                        Views
-                                                        <span class="comments_number">130</span>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div class="columns1_3 column_item_4 even">
-                                            <article class="sc_blogger_item">
-                                                <div class="thumb">
-                                                    <a href="#">
-                                                        <img alt="Does Your Child Have a Cold or the Flu?"
-                                                             src="images/kidscare-23-714x402.jpg">
-                                                        <div class="sc_blogger_content">
-                                                            <div class="sc_blogger_content_inner">Maecenas tristique sem
-                                                                ante. Donec imperdiet pretium sodales. Sed in eros
-                                                                fermentum, facilisis...
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <h4 class="sc_blogger_title sc_title">
-                                                    <a href="#">Does Your Child Have a Cold or the Flu?</a>
-                                                </h4>
-                                                <div class="reviews_summary blog_reviews">
-                                                    <div class="classes_price">
-                                                        <p>FREE!</p>
-                                                    </div>
-                                                    <div class="criteria_summary criteria_row">
-                                                        <div class="ratingItem" data-mark="80">
-                                                            <div class="starDefault">
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                            </div>
-                                                            <div class="starHover">
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="sc_blogger_content">
-                                                </div>
-                                                <div class="sc_blogger_info">
-                                                    <div class="squareButton light ico sc_blogger_more">
-                                                        <a class="icon-link" title="" href="#">More</a>
-                                                    </div>
-                                                    <div class="sc_blogger_author">
-                                                        Posted by
-                                                        <a href="#" class="post_author">admin</a>
-                                                        <span class="separator">|</span>
-                                                        Views
-                                                        <span class="comments_number">50</span>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div class="columns1_3 column_item_5 odd">
-                                            <article class="sc_blogger_item">
-                                                <div class="thumb">
-                                                    <a href="#">
-                                                        <img alt="When Your Child Has a Cold"
-                                                             src="images/kidscare-20-714x402.jpg">
-                                                        <div class="sc_blogger_content">
-                                                            <div class="sc_blogger_content_inner">Vivamus pharetra justo
-                                                                eget placerat commodo. Class aptent taciti sociosqu ad
-                                                                litora torquent...
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <h4 class="sc_blogger_title sc_title">
-                                                    <a href="#">When Your Child Has a Cold</a>
-                                                </h4>
-                                                <div class="reviews_summary blog_reviews">
-                                                    <div class="classes_price">
-                                                        <p>$85
-                                                            <strong>/mo</strong>
-                                                        </p>
-                                                    </div>
-                                                    <div class="criteria_summary criteria_row">
-                                                        <div class="ratingItem" data-mark="90">
-                                                            <div class="starDefault">
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                            </div>
-                                                            <div class="starHover">
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="sc_blogger_content">
-                                                </div>
-                                                <div class="sc_blogger_info">
-                                                    <div class="squareButton light ico sc_blogger_more">
-                                                        <a class="icon-link" title="" href="#">More</a>
-                                                    </div>
-                                                    <div class="sc_blogger_author">
-                                                        Posted by
-                                                        <a href="#" class="post_author">admin</a>
-                                                        <span class="separator">|</span>
-                                                        Views
-                                                        <span class="comments_number">78</span>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div class="columns1_3 column_item_6 even columns_last">
-                                            <article class="sc_blogger_item sc_blogger_item_last">
-                                                <div class="thumb">
-                                                    <a href="#">
-                                                        <img alt="Detecting Learning Disabilities"
-                                                             src="images/kidscare-10-714x402.jpg">
-                                                        <div class="sc_blogger_content">
-                                                            <div class="sc_blogger_content_inner">Ut vitae lacus
-                                                                pretium, molestie massa a, placerat urna. Donec viverra
-                                                                nisl id nisl accumsan, ac...
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <h4 class="sc_blogger_title sc_title">
-                                                    <a href="#">Detecting Learning Disabilities</a>
-                                                </h4>
-                                                <div class="reviews_summary blog_reviews">
-                                                    <div class="classes_price">
-                                                        <p>$115
-                                                            <strong>/mo</strong>
-                                                        </p>
-                                                    </div>
-                                                    <div class="criteria_summary criteria_row">
-                                                        <div class="ratingItem" data-mark="100">
-                                                            <div class="starDefault">
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                            </div>
-                                                            <div class="starHover">
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                                <span class="starReview"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="sc_blogger_content">
-                                                </div>
-                                                <div class="sc_blogger_info">
-                                                    <div class="squareButton light ico sc_blogger_more">
-                                                        <a class="icon-link" title="" href="#">More</a>
-                                                    </div>
-                                                    <div class="sc_blogger_author">
-                                                        Posted by
-                                                        <a href="#" class="post_author">admin</a>
-                                                        <span class="separator">|</span>
-                                                        Views
-                                                        <span class="comments_number">42</span>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sc_section bg_tint_none sc_aligncenter margin_top_middle">
-                                    <div class="">
-                                        <div class="sc_button sc_button_style_global sc_button_size_banner squareButton global banner">
-                                            <a href="#" class="">More cool classes</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <!--Service Icons-->
-
-                        <!--Sky Blue Section-->
-                        <section class="post no_padding" style="width: 90%;margin-left: 5%;">
+                        <section id="performance">
                             <div class="container">
-                                <div class="">
-                                    <h2 class="sc_title sc_title_regular aligncenter margin_bottom_small">Pricing
-                                        tables</h2>
-                                    <div class="sc_pricing_table columns_4 alignCenter">
-                                        <div class="sc_pricing_columns sc_pricing_column_1">
-                                            <ul class="columnsAnimate">
-                                                <li class="sc_pricing_data sc_pricing_title">Basic</li>
-                                                <li class="sc_pricing_data">1 Website</li>
-                                                <li class="sc_pricing_data">Unlimited Bandwidth</li>
-                                                <li class="sc_pricing_data">100 GB Disk Space</li>
-                                                <li class="sc_pricing_data">10 MySQL Databases</li>
-                                                <li class="sc_pricing_data">100 Email Addresses</li>
-                                            </ul>
-                                        </div>
-                                        <div class="sc_pricing_columns sc_pricing_column_2">
-                                            <ul class="columnsAnimate">
-                                                <li class="sc_pricing_data sc_pricing_title">Standard</li>
-                                                <li class="sc_pricing_data">10 Websites</li>
-                                                <li class="sc_pricing_data">Unlimited Bandwidth</li>
-                                                <li class="sc_pricing_data">1 TB Disk Space</li>
-                                                <li class="sc_pricing_data">100 MySQL databases</li>
-                                                <li class="sc_pricing_data">1000 Email Addresses</li>
-                                            </ul>
-                                        </div>
-                                        <div class="sc_pricing_columns sc_pricing_column_3">
-                                            <ul class="columnsAnimate">
-                                                <li class="sc_pricing_data sc_pricing_title">Premium</li>
-                                                <li class="sc_pricing_data">50 Websites</li>
-                                                <li class="sc_pricing_data">Unlimited Bandwidth</li>
-                                                <li class="sc_pricing_data">Unlimited Disk Space</li>
-                                                <li class="sc_pricing_data">100 MySQL Databases</li>
-                                                <li class="sc_pricing_data">5000 Email Addresses</li>
-                                            </ul>
-                                        </div>
-                                        <div class="sc_pricing_columns sc_pricing_column_4">
-                                            <ul class="columnsAnimate">
-                                                <li class="sc_pricing_data sc_pricing_title">Gold</li>
-                                                <li class="sc_pricing_data">Unlimited Websites</li>
-                                                <li class="sc_pricing_data">Unlimited Bandwidth</li>
-                                                <li class="sc_pricing_data">Unlimited Disk Space</li>
-                                                <li class="sc_pricing_data">Unlimited MySQL Databases</li>
-                                                <li class="sc_pricing_data">Unlimited Email Addresses</li>
-                                            </ul>
+                                <div class="sc_content main ">
+                                    <div class="aligncenter margin_bottom_middle">
+                                        <h2 class="sc_title style_2 sc_title_regular">Спектакллар</h2>
+                                        <h4 class="sc_undertitle style_1">We design digital toys not just for kids, but
+                                            with
+                                            kids</h4>
+                                    </div>
+                                    <div class="sc_blogger sc_blogger_horizontal style_image style_image_classes">
+                                        <div class="columnsWrap">
+                                            <?php foreach ($performances as $performance): ?>
+                                                <div class="columns1_3 column_item_1 odd first" style="float: right;">
+                                                    <article class="sc_blogger_item">
+                                                        <div class="thumb">
+                                                            <a href="#">
+                                                                <div>
+                                                                    <img alt="<?= $performance->file_name ?>"
+                                                                         src="<?= $performance->file_path ?>">
+                                                                </div>
+                                                                <div class="sc_blogger_content">
+                                                                    <div class="sc_blogger_content_inner">
+                                                                        <?= substr($performance->description, 0, 150) ?>
+                                                                        ...
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <h4 class="sc_blogger_title sc_title">
+                                                            <a href="#"><?= $performance->title ?></a>
+
+                                                        </h4>
+                                                        <div class="reviews_summary blog_reviews">
+                                                            <div class="criteria_summary criteria_row">
+                                                                <span>Режиссер:
+                                                                    <strong><?= $performance->author ?></strong></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sc_blogger_content">
+                                                        </div>
+                                                        <div class="sc_blogger_info">
+                                                            <div class="squareButton light ico sc_blogger_more">
+                                                                <a class="icon-link" title="" href="#">More</a>
+                                                            </div>
+                                                            <div class="sc_blogger_author">
+                                                                Posted by
+                                                                <a href="#" class="post_author">admin</a>
+                                                                <span class="separator">|</span>
+                                                                Views
+                                                                <span class="comments_number">176</span>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            <?php endforeach; ?>
                                         </div>
                                     </div>
-                                    <div class="sc_line sc_line_style_solid margin_top_big margin_bottom_big"></div>
+                                    <div class="sc_section bg_tint_none sc_aligncenter margin_top_middle">
+                                        <div class="">
+                                            <div class="sc_button sc_button_style_global sc_button_size_banner squareButton global banner">
+                                                <a style="height: 74px;line-height: 78px;font-size: 20px; padding: 0 12px 0 11px;"
+                                                   href="#" class="">More cool classes</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>
-                        <!--Sky Blue Section-->
-
+                        <!--Service Icons-->
 
                         <!--Available BabySitters-->
                         <section class="blue_section">
@@ -752,180 +400,26 @@ $this->title = 'My Yii Application';
                                                 Babysitters</h2>
                                             <div class="sc_team no_padding margin_top_middle margin_bottom_m20">
                                                 <div class="sc_columns columnsWrap">
-                                                    <div class="columns1_4">
-                                                        <div class="sc_team_item sc_team_item_1 odd first">
-                                                            <div class="sc_team_item_avatar">
-                                                                <img alt="babbysitter-team-1.jpg"
-                                                                     src="/images/babbysitter-team-11-370x370.jpg">
-                                                                <div class="sc_team_item_description">
-                                                                    <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
-                                                                        <a href="#" class="">Book Now</a></div>
+                                                    <?php foreach ($artists as $artist): ?>
+                                                        <div class="columns1_4">
+                                                            <div class="sc_team_item sc_team_item_1 odd first">
+                                                                <div class="sc_team_item_avatar">
+                                                                    <img alt="<?= $artist->photo_name ?>"
+                                                                         src="<?= $artist->photo_path ?>">
+                                                                    <div class="sc_team_item_description">
+                                                                        <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
+                                                                            <a href="#" class="">More</a></div>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="sc_team_item_info">
-                                                                <h3 class="sc_team_item_title">Kristan W.</h3>
-                                                                <div class="sc_team_item_position theme_accent2">
-                                                                    After School Babysitter
-                                                                </div>
-                                                                <ul class="sc_team_item_socials">
-                                                                    <li>
-                                                                        <a href="#"
-                                                                           class="social_icons social_twitter twitter twitter_image"
-                                                                           target="_blank">
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"
-                                                                           class="social_icons social_facebook facebook facebook_image"
-                                                                           target="_blank">
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"
-                                                                           class="social_icons social_gplus gplus gplus_image"
-                                                                           target="_blank">
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="columns1_4">
-                                                        <div class="sc_team_item sc_team_item_2 even">
-                                                            <div class="sc_team_item_avatar">
-                                                                <img alt="babbysitter-team-2.jpg"
-                                                                     src="images/babbysitter-team-21-370x370.jpg">
-                                                                <div class="sc_team_item_description">
-                                                                    <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
-                                                                        <a href="#" class="">Book Now</a>
+                                                                <div class="sc_team_item_info">
+                                                                    <h3 class="sc_team_item_title"><?= $artist->fullname ?></h3>
+                                                                    <div class="sc_team_item_position theme_accent2">
+                                                                        <?= substr($artist->description, 0, 50) ?>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="sc_team_item_info">
-                                                                <h3 class="sc_team_item_title">Valerie C.</h3>
-                                                                <div class="sc_team_item_position theme_accent2">
-                                                                    Before School Babysitter
-                                                                </div>
-                                                                <ul class="sc_team_item_socials">
-                                                                    <li>
-                                                                        <a href="#"
-                                                                           class="social_icons social_facebook facebook facebook_image"
-                                                                           target="_blank">
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"
-                                                                           class="social_icons social_twitter twitter twitter_image"
-                                                                           target="_blank">
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"
-                                                                           class="social_icons social_gplus gplus gplus_image"
-                                                                           target="_blank">
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"
-                                                                           class="social_icons social_dribbble dribbble dribbble_image"
-                                                                           target="_blank">
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="columns1_4">
-                                                        <div class="sc_team_item sc_team_item_3 odd">
-                                                            <div class="sc_team_item_avatar">
-                                                                <img alt="babbysitter-team-3.jpg"
-                                                                     src="images/babbysitter-team-31-370x370.jpg">
-                                                                <div class="sc_team_item_description">
-                                                                    <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
-                                                                        <a href="#" class="">Book Now</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="sc_team_item_info">
-                                                                <h3 class="sc_team_item_title">Rachel H.</h3>
-                                                                <div class="sc_team_item_position theme_accent2">
-                                                                    School Year Babysitter
-                                                                </div>
-                                                                <ul class="sc_team_item_socials">
-                                                                    <li>
-                                                                        <a href="#"
-                                                                           class="social_icons social_facebook facebook facebook_image"
-                                                                           target="_blank">
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"
-                                                                           class="social_icons social_twitter twitter twitter_image"
-                                                                           target="_blank">
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"
-                                                                           class="social_icons social_gplus gplus gplus_image"
-                                                                           target="_blank">
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="columns1_4">
-                                                        <div class="sc_team_item sc_team_item_4 even">
-                                                            <div class="sc_team_item_avatar">
-                                                                <img alt="babbysitter-team-4.jpg"
-                                                                     src="images/babbysitter-team-41-370x370.jpg">
-                                                                <div class="sc_team_item_description">
-                                                                    <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
-                                                                        <a href="#" class="">Book Now</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="sc_team_item_info">
-                                                                <h3 class="sc_team_item_title">Nicole H.</h3>
-                                                                <div class="sc_team_item_position theme_accent2">
-                                                                    School Year Babysitter
-                                                                </div>
-                                                                <ul class="sc_team_item_socials">
-                                                                    <li>
-                                                                        <a href="#"
-                                                                           class="social_icons social_facebook facebook facebook_image"
-                                                                           target="_blank">
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"
-                                                                           class="social_icons social_dribbble dribbble dribbble_image"
-                                                                           target="_blank">
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"
-                                                                           class="social_icons social_gplus gplus gplus_image"
-                                                                           target="_blank">
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    <?php endforeach; ?>
                                                 </div>
                                             </div>
                                         </div>
@@ -934,246 +428,85 @@ $this->title = 'My Yii Application';
                             </div>
                         </section>
                         <!--Available BabySitters-->
-
-                        <!--Testimonials-->
-                        <section class="yellow_section with_testimonials">
+                        <!--Sky Blue Section-->
+                        <br>
+                        <br>
+                        <section id="repertuar" class="post no_padding" style="width: 90%;margin-left: 5%;">
                             <div class="container">
                                 <div class="">
-                                    <div class="sc_section bg_tint_dark">
-                                        <div class="sc_content main ">
-                                            <h2 class="sc_title style_2 sc_title_regular aligncenter margin_bottom_middle">
-                                                What our Happy Parents Say</h2>
-                                            <div class="sc_testimonials sc_testimonials_style_2 with_aircraft">
-                                                <div class="sc_slider sc_slider_swiper sc_slider_nopagination sc_slider_autoheight swiper-slider-container"
-                                                     data-interval="7000">
-                                                    <ul class="sc_testimonials_items slides swiper-wrapper">
-                                                        <li class="sc_testimonials_item swiper-slide">
-                                                            <div class="sc_testimonials_item_content">
-                                                                <div class="sc_testimonials_item_quote">
-                                                                    <div class="sc_testimonials_item_text">It is
-                                                                        such a great feeling to know that our
-                                                                        family has found a child care that is so
-                                                                        loving and supportive. KidsCare has
-                                                                        given our children excellent care! Their
-                                                                        babysitters are so wonderful and
-                                                                        encouraging to our family.
-                                                                    </div>
-                                                                </div>
-                                                                <div class="sc_testimonials_item_author">
-                                                                    <div class="sc_testimonials_item_avatar">
-                                                                        <img alt='' src='images/no-ava.png'
-                                                                             srcset='images/no-ava.png'
-                                                                             class='avatar avatar-50 photo'/>
-                                                                    </div>
-                                                                    <div class="sc_testimonials_item_name">
-                                                                        Marcus
-                                                                    </div>
-                                                                    <div class="sc_testimonials_item_position">
-                                                                        Purchaser
-                                                                    </div>
-                                                                </div>
-                                                                <div class="sc_testimonials_item_object">
-                                                                    <div class="object"></div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="sc_testimonials_item swiper-slide">
-                                                            <div class="sc_testimonials_item_content">
-                                                                <div class="sc_testimonials_item_quote">
-                                                                    <div class="sc_testimonials_item_text">It is
-                                                                        such a great feeling to know that our
-                                                                        family has found a child care that is so
-                                                                        loving and supportive. KidsCare has
-                                                                        given our children excellent care! Their
-                                                                        babysitters are so wonderful and
-                                                                        encouraging to our family.
-                                                                    </div>
-                                                                </div>
-                                                                <div class="sc_testimonials_item_author">
-                                                                    <div class="sc_testimonials_item_avatar">
-                                                                        <img alt='' src='images/ava_1.jpg'
-                                                                             srcset='images/ava_1.jpeg'
-                                                                             class='avatar avatar-50 photo'/>
-                                                                    </div>
-                                                                    <div class="sc_testimonials_item_name">
-                                                                        Martha
-                                                                    </div>
-                                                                    <div class="sc_testimonials_item_position">
-                                                                        Purchaser
-                                                                    </div>
-                                                                </div>
-                                                                <div class="sc_testimonials_item_object">
-                                                                    <div class="object"></div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="sc_testimonials_item swiper-slide">
-                                                            <div class="sc_testimonials_item_content">
-                                                                <div class="sc_testimonials_item_quote">
-                                                                    <div class="sc_testimonials_item_text">It is
-                                                                        such a great feeling to know that our
-                                                                        family has found a child care that is so
-                                                                        loving and supportive. KidsCare has
-                                                                        given our children excellent care! Their
-                                                                        babysitters are so wonderful and
-                                                                        encouraging to our family.
-                                                                    </div>
-                                                                </div>
-                                                                <div class="sc_testimonials_item_author">
-                                                                    <div class="sc_testimonials_item_avatar">
-                                                                        <img src="images/no-ava.png" alt="">
-                                                                    </div>
-                                                                    <div class="sc_testimonials_item_name">
-                                                                        Marcus
-                                                                    </div>
-                                                                    <div class="sc_testimonials_item_position">
-                                                                        Purchaser
-                                                                    </div>
-                                                                </div>
-                                                                <div class="sc_testimonials_item_object">
-                                                                    <div class="object"></div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="sc_testimonials_item swiper-slide">
-                                                            <div class="sc_testimonials_item_content">
-                                                                <div class="sc_testimonials_item_quote">
-                                                                    <div class="sc_testimonials_item_text">It is
-                                                                        such a great feeling to know that our
-                                                                        family has found a child care that is so
-                                                                        loving and supportive. KidsCare has
-                                                                        given our children excellent care! Their
-                                                                        babysitters are so wonderful and
-                                                                        encouraging to our family.
-                                                                    </div>
-                                                                </div>
-                                                                <div class="sc_testimonials_item_author">
-                                                                    <div class="sc_testimonials_item_avatar">
-                                                                        <img src="images/no-ava.png" alt="">
-                                                                    </div>
-                                                                    <div class="sc_testimonials_item_name">
-                                                                        Nilsen
-                                                                    </div>
-                                                                    <div class="sc_testimonials_item_position">
-                                                                        Purchaser
-                                                                    </div>
-                                                                </div>
-                                                                <div class="sc_testimonials_item_object">
-                                                                    <div class="object"></div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                    <h2 class="sc_title sc_title_regular aligncenter margin_bottom_small">Pricing
+                                        tables</h2>
+                                    <div class="sc_pricing_table columns_4 alignCenter">
+                                        <?php foreach ($repertoires as $repertoire): ?>
+                                            <div class="sc_pricing_columns sc_pricing_column_1">
+                                                <ul class="columnsAnimate">
+                                                    <li class="sc_pricing_data sc_pricing_title">
+                                                        <?= $repertoire->performance->title ?>
+                                                    </li>
+                                                    <?php $datetime = new DateTime($repertoire->date) ?>
+                                                    <li class="sc_pricing_data"><?= $datetime->format('d M, Y') ?></li>
+                                                    <li class="sc_pricing_data"><?= date("H:i:s", strtotime($repertoire->date)) ?></li>
+                                                    <li class="sc_pricing_data"><?= $repertoire->price ?> UZS</li>
+                                                    <li class="sc_pricing_data"><?= $repertoire->performance->author ?></li>
+                                                    <li class="sc_pricing_data">
+                                                        <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
+                                                            <a href="#" class="">Купить Билет</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                    <div class="sc_section bg_tint_none sc_aligncenter margin_top_middle">
+                                        <div class="">
+                                            <div class="sc_button sc_button_style_global sc_button_size_banner squareButton global banner">
+                                                <a style="height: 74px;line-height: 78px;font-size: 23px; padding: 0 12px 0 11px;"
+                                                   href="#" class="">More cool classes</a>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="sc_line sc_line_style_solid margin_top_big margin_bottom_big"></div>
                                 </div>
                             </div>
                         </section>
-                        <!--Testimonials-->
+                        <!--Sky Blue Section-->
 
                         <!--Price Table-->
-                        <section class="with_pricetable">
-
+                        <section id="contacts" class="no_padding">
                             <div class="container">
-                                <div class="">
-                                    <div class="sc_section bg_tint_light">
-                                        <div class="sc_content main ">
-                                            <h2 class="sc_title style_2 aligncenter sc_title_regular margin_bottom_small">
-                                                Babysitting Rates</h2>
-                                            <div class="sc_columns columnsWrap">
-                                                <div class="sc_pricing_table columns1_3 alignCenter table_color_green margin_top_small margin_bottom_small">
-                                                    <div class="sc_pricing_columns sc_pricing_column_1">
-                                                        <ul class="columnsAnimate">
-                                                            <li class="sc_pricing_data sc_pricing_title">1
-                                                                Child
-                                                            </li>
-                                                            <li class="sc_pricing_data sc_pricing_price">
-                                                                <div class="sc_price_item">
-                                                                    <span class="sc_price_currency">$</span>
-                                                                    <div class="sc_price_money">18</div>
-                                                                    <div class="sc_price_info">
-                                                                        <div class="sc_price_penny">
-                                                                        </div>
-                                                                        <div class="sc_price_period">/ hour
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li class="sc_pricing_data">Save $5 every year
-                                                                compared to the monthly plan by paying yearly.
-                                                            </li>
-                                                            <li class="sc_pricing_data sc_pricing_footer">
-                                                                <div class="sc_button sc_button_style_global sc_button_size_big curveButton squareButton global big  ico">
-                                                                    <a href="#" class="inherit">Purchase</a>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="sc_pricing_table columns1_3 alignCenter table_color_blue margin_top_small margin_bottom_small">
-                                                    <div class="sc_pricing_columns sc_pricing_column_1">
-                                                        <ul class="columnsAnimate">
-                                                            <li class="sc_pricing_data sc_pricing_title">2
-                                                                Children
-                                                            </li>
-                                                            <li class="sc_pricing_data sc_pricing_price">
-                                                                <div class="sc_price_item">
-                                                                    <span class="sc_price_currency">$</span>
-                                                                    <div class="sc_price_money">20</div>
-                                                                    <div class="sc_price_info">
-                                                                        <div class="sc_price_penny">
-                                                                        </div>
-                                                                        <div class="sc_price_period">/ hour
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li class="sc_pricing_data">Save $15 every year
-                                                                compared to the monthly plan by paying yearly.
-                                                            </li>
-                                                            <li class="sc_pricing_data sc_pricing_footer">
-                                                                <div class="sc_button sc_button_style_global sc_button_size_big curveButton squareButton global big  ico">
-                                                                    <a href="#" class="inherit">Purchase</a>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="sc_pricing_table columns1_3 alignCenter table_color_orange margin_top_small margin_bottom_small">
-                                                    <div class="sc_pricing_columns sc_pricing_column_1">
-                                                        <ul class="columnsAnimate">
-                                                            <li class="sc_pricing_data sc_pricing_title">3
-                                                                Children
-                                                            </li>
-                                                            <li class="sc_pricing_data sc_pricing_price">
-                                                                <div class="sc_price_item">
-                                                                    <span class="sc_price_currency">$</span>
-                                                                    <div class="sc_price_money">20</div>
-                                                                    <div class="sc_price_info">
-                                                                        <div class="sc_price_penny">
-                                                                        </div>
-                                                                        <div class="sc_price_period">/ hour
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li class="sc_pricing_data">Save $50 every year
-                                                                compared to the monthly plan by paying yearly.
-                                                            </li>
-                                                            <li class="sc_pricing_data sc_pricing_footer">
-                                                                <div class="sc_button sc_button_style_global sc_button_size_big curveButton squareButton global big  ico">
-                                                                    <a href="#" class="inherit">Purchase</a>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
+
+                                <div class="columnsWrap sc_columns custom_columns sc_columns_count_2">
+                                    <div class="columns1_2 sc_column_item sc_column_item_1 odd first">
+                                        <div id="map" class="sc_googlemap sc_googlemap_style_2"
+                                             data-description="Ташкент 100021 Узбекистан"
+                                             data-address="Ташкент 100021 Узбекистан" data-latlng="" data-zoom="16"
+                                             data-style="default" data-point="">
+                                        </div>
+                                    </div>
+                                    <div class="columns1_2 sc_column_item sc_column_item_2 even"
+                                         style="padding: 20px 50px 0 0;text-align: justify;">
+                                        <h3 class="sc_title sc_title_regular">Ташкентский детский театр марионеток <br>
+                                            «THEATRE – STUDIO SILK ROUTE MARIONETTES»</h3>
+                                        <div class="">
+                                            <p>Ташкентский детский театр марионеток «Theatre – Studio Silk Route
+                                                Marionettes» — первый и единственный профессиональный театр марионеток в
+                                                Центральной Азии. Основываясь на вековых традициях народного узбекского
+                                                искусства «чодир-хаел» (куклы на нитях), детально изучив сохранившиеся
+                                                летописи, творчески осмыслив непреходящую ценность кукольного зрелища
+                                                для становления человеческой личности от младости до старости, новый
+                                                театр являет миру уникальный синтез современных сценических технологий и
+                                                свежесть музыкально-пластических решений с эксклюзивным наследием
+                                                мастерства и чаяний предшественников — кугирчокчи.</p>
+                                            <p>Марионетки, живущие и действующие в спектаклях наших дней, — учат,
+                                                развивают, воспитывают и детей, и взрослых; пробуждают интерес к
+                                                творческому восприятию жизни, возрождают возвышенные чувства от
+                                                соприкосновения с чудом сценического «оживления» красочных кукол и их
+                                                перевоплощения в запоминающиеся образы.</p>
+
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </section>
                         <!--Price Table-->
@@ -1183,4 +516,8 @@ $this->title = 'My Yii Application';
         </div>
     </div>
 </div>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4CRPir1lP-GbSV9aTU6CGGpripJA&callback=initMap">
+</script>
 <!--Main Content-->

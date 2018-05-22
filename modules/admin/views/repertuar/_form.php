@@ -1,5 +1,6 @@
 <?php
 use kartik\date\DatePicker;
+use kartik\datetime\DateTimePicker;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
@@ -18,11 +19,12 @@ use yii\widgets\ActiveForm;
     ) ?>
 
     <?php
-    echo $form->field($model, 'date')->widget(DatePicker::classname(), [
+    echo $form->field($model, 'date')->widget(DateTimePicker::classname(), [
         'options' => ['placeholder' => 'Выберите число'],
         'pluginOptions' => [
-            'format' => 'yyyy-mm-dd',
-            'autoclose' => true
+            'format' => 'yyyy-mm-dd hh:ii',
+            'todayHighlight' => true,
+            'autoclose' => true,
         ]
     ]);
 

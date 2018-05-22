@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\web\UploadedFile;
 
 /**
  * This is the model class for table "artists".
@@ -18,6 +19,10 @@ use Yii;
  */
 class Artists extends \yii\db\ActiveRecord
 {
+
+
+    public $mainPhoto;
+
     /**
      * {@inheritdoc}
      */
@@ -32,7 +37,7 @@ class Artists extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['description','description_uz'], 'string'],
+            [['description', 'description_uz'], 'string'],
             [['fullname', 'photo_path', 'photo_name'], 'string', 'max' => 255],
         ];
     }
@@ -50,6 +55,21 @@ class Artists extends \yii\db\ActiveRecord
             'photo_path' => Yii::t('main', 'Photo Path'),
             'photo_name' => Yii::t('main', 'Photo Name'),
         ];
+    }
+
+    public function beforeSave($insert)
+    {
+        if (parent::beforeSave($insert)) {
+
+            if ($file = UploadedFile::getInstance($this, 'mainPhoto')) {
+                $path = 'uploads/' . $file->baseName . '.' . $file->extension;
+                $file->saveAs($path);
+                $this->photo_name = $file->baseName . '.' . $file->extension;
+                $this->photo_path = $path;
+            }
+            return true;
+        }
+        return false;
     }
 
     /**

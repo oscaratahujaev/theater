@@ -12,6 +12,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use \yii\web\Response;
 use yii\helpers\Html;
+use yii\web\UploadedFile;
 
 /**
  * PerformanceController implements the CRUD actions for Performance model.
@@ -120,13 +121,15 @@ class PerformanceController extends Controller
 
                 ];
             } else if ($model->load($request->post()) && $model->save()) {
-                return ['forceReload' => '#crud-datatable-pjax',
+                return [
+                    'forceReload' => '#crud-datatable-pjax',
                     'title' => "Добавление",
                     'content' => '<span class="text-success">Успешно</span>',
                     'footer' => Html::button('Закрыть', ['class' => 'btn btn-default pull-left', 'data-dismiss' => "modal"]) .
                         Html::a('Create More', ['create'], ['class' => 'btn btn-primary', 'role' => 'modal-remote'])
 
                 ];
+
             } else {
                 return [
                     'title' => "Добавление",

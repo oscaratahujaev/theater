@@ -2,8 +2,10 @@
 
 namespace app\models;
 
+use nsept\behaviors\CyrillicSlugBehavior;
 use Yii;
 use yii\behaviors\SluggableBehavior;
+use yii\web\UploadedFile;
 
 /**
  * This is the model class for table "performance".
@@ -14,7 +16,8 @@ use yii\behaviors\SluggableBehavior;
  * @property string $description
  * @property string $description_uz
  * @property string $author
- * @property string $files
+ * @property string $file_name
+ * @property string $file_path
  * @property int $status
  *
  * @property RefStatus $status_
@@ -24,11 +27,14 @@ use yii\behaviors\SluggableBehavior;
 class Performance extends \yii\db\ActiveRecord
 {
 
+
+    public $mainPhoto;
+
     public function behaviors()
     {
         return [
             [
-                'class' => \nsept\behaviors\CyrillicSlugBehavior::className(),
+                'class' => CyrillicSlugBehavior::className(),
                 'attribute' => 'title',
                 //'slugAttribute' => 'slug',
             ],
@@ -50,10 +56,11 @@ class Performance extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['description', 'description_uz', 'files', 'slug'], 'string'],
+            [['description', 'description_uz', 'file_name', 'file_path', 'slug'], 'string'],
             [['status'], 'integer'],
             ['title', 'unique'],
             [['title', 'author', 'title_uz'], 'string', 'max' => 255],
+            [['mainPhoto'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg'],
             [['status'], 'exist', 'skipOnError' => true, 'targetClass' => RefStatus::className(), 'targetAttribute' => ['status' => 'id']],
         ];
     }
@@ -70,7 +77,8 @@ class Performance extends \yii\db\ActiveRecord
             'description' => Yii::t('main', 'Описание'),
             'description_uz' => Yii::t('main', 'Описание на узб.'),
             'author' => Yii::t('main', 'Автор'),
-            'files' => Yii::t('main', 'Files'),
+            'file_name' => Yii::t('main', 'File Name'),
+            'file_path' => Yii::t('main', 'File Path'),
             'status' => Yii::t('main', 'Статус'),
         ];
     }
@@ -84,6 +92,14 @@ class Performance extends \yii\db\ActiveRecord
     public function beforeSave($insert)
     {
         if (parent::beforeSave($insert)) {
+
+            if ($file = UploadedFile::getInstance($this, 'mainPhoto')) {
+                $path = 'uploads/' . $file->baseName . '.' . $file->extension;
+                $file->saveAs($path);
+                $this->file_name = $file->baseName . '.' . $file->extension;
+                $this->file_path = $path;
+            }
+
 
             self::createDir($this->title);
 

@@ -31,6 +31,8 @@ class HomeAsset extends AssetBundle
         'js/custom/_utils.js',
         'js/custom/_front.js',
         'js/custom/_googlemap_init.js',
+        'js/map.js',
+
 
     ];
     public $css = [
@@ -42,7 +44,8 @@ class HomeAsset extends AssetBundle
         'css/shortcodes.css',
         'css/responsive.css',
         'css/healthcare.css',
-        'css/kidscare.css'
+        'css/kidscare.css',
+        'css/site.css'
 
     ];
     public $depends = [

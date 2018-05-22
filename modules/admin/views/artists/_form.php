@@ -24,6 +24,7 @@ use yii\widgets\ActiveForm;
         'preset' => 'basic'
     ]) ?>
 
+    <?= $form->field($model, 'mainPhoto')->fileInput([]) ?>
 
     <?php if (!Yii::$app->request->isAjax) { ?>
         <div class="form-group">

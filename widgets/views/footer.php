@@ -12,17 +12,17 @@
             <section>
                 <div class="logo">
                     <a href="index-2.html">
-                        <img src="images/logo-footer.png" alt="">
+                        <img src="images/logo-mit-schrift.png" style="width: 270px;" alt="">
                     </a>
                 </div>
                 <div class="contactAddress">
                     <address class="addressRight">
-                        Phone: 1.800.123.4567<br>
-                        Fax: 1.800.123.4566
+                        Телефон : +998 (90) 808-57-87<br>
+                        Телефон : +998 (95) 198-83-83
                     </address>
                     <address class="addressLeft">
-                        San Francisco, CA 94102, US<br>
-                        1234, Some Str.
+                        г.Ташкент, ул. Караташ, 5А<br>
+                        Samarqand Darvoza, Третий этаж
                     </address>
                 </div>
                 <div class="contactTtextLine">Share this page with friends who need help in 2015, too.</div>
