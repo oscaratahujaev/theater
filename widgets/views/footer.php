@@ -25,47 +25,6 @@
                         Samarqand Darvoza, Третий этаж
                     </address>
                 </div>
-                <div class="contactTtextLine">Share this page with friends who need help in 2015, too.</div>
-                <div class="contactShare">
-                    <ul>
-                        <li>
-                            <a class="social_icons fShare facebook_image" href="http://facebook.com/"
-                               target="_blank" title="Facebook">
-                                <span></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social_icons fShare pinterest_image" href="http://pinterest.com/"
-                               target="_blank" title="Pinterest">
-                                <span></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social_icons fShare twitter_image" href="http://twitter.com/"
-                               target="_blank" title="Twitter">
-                                <span></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social_icons fShare gplus_image" href="http://gplus.com/" target="_blank"
-                               title="Gplus">
-                                <span></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social_icons fShare linkedin_image" href="http://linkedin.com/"
-                               target="_blank" title="Linkedin">
-                                <span></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social_icons fShare vimeo_image" href="http://vimeo.com/" target="_blank"
-                               title="Vimeo">
-                                <span></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </section>
         </div>
     </footer>

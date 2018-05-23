@@ -3,7 +3,10 @@
 namespace app\controllers;
 
 use app\components\Functions;
+use app\models\Artists;
 use app\models\Performance;
+use app\models\PerformanceArtist;
+use Codeception\Actor;
 use yii\web\Controller;
 
 class PerformanceController extends Controller
@@ -20,9 +23,13 @@ class PerformanceController extends Controller
     {
         $performance = Performance::find()->where(['id' => $id])->one();
         $files = Functions::listPerformanceFiles($performance->title);
+
+
+        $actors = PerformanceArtist::find()->where(['performance_id' => $performance->id])->with('artist')->all();
         return $this->render('view', [
             'performance' => $performance,
-            'files' => $files
+            'files' => $files,
+            'artists' => $actors,
         ]);
     }
 

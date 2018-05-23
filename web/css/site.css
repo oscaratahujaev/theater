@@ -124,6 +124,8 @@ a.desc:after {
     width: 100%;
 }
 
+
+
 .language {
     display: inline-flex;
     position: relative;
@@ -138,3 +140,19 @@ a.desc:after {
 /*.artist-image-wrapper {
     height: 200px;
 }*/
+
+.widgetTabs .widgetTop ul:not(.tabs) > li {
+
+}
+
+.repertuar {
+    width: 100% !important;
+}
+
+.widgetTabs .widgetTop ul:not(.tabs) > li {
+    font-size: 18px;
+}
+
+.widgetTabs .widgetTop ul:not(.tabs) > li:before {
+    content: '';
+}

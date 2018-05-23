@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\components\Functions;
 use app\models\Artists;
 use app\models\Performance;
 use app\models\Repertuar;
@@ -167,6 +168,34 @@ class SiteController extends Controller
 
         return $this->render('signup', [
             'model' => $model,
+        ]);
+    }
+
+
+    public function actionRepertoire()
+    {
+        $repertiore = Repertuar::find()->select(['MONTH(date)'])->where(['status' => Functions::STATUS_ACTIVE])->orderBy('date ASC')->all();
+
+
+        $db = Yii::$app->getDb();
+        $query = $db->createCommand("SELECT *,  MONTH(r.date) AS month FROM repertuar r ORDER BY r.date;");
+        $data = $query->queryAll();
+
+        $months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+        $repertuars = [];
+        for ($i = 1; $i < 13; $i++) {
+            foreach ($data as $item) {
+                if ($item['month'] == $i) {
+                    $repertuars[$i]['values'][] = $item;
+                }
+            }
+        }
+
+//        debug($repertuars);
+//        die();
+
+        return $this->render('repertiore', [
+            'repertiores' => $repertuars,
         ]);
     }
 
