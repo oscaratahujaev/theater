@@ -338,7 +338,7 @@ $this->title = 'My Yii Application';
                                                             <a href="#">
                                                                 <div>
                                                                     <img alt="<?= $performance->file_name ?>"
-                                                                         src="<?= $performance->file_path ?>">
+                                                                         src="/<?= $performance->file_path ?>">
                                                                 </div>
                                                                 <div class="sc_blogger_content">
                                                                     <div class="sc_blogger_content_inner">
@@ -349,7 +349,7 @@ $this->title = 'My Yii Application';
                                                             </a>
                                                         </div>
                                                         <h4 class="sc_blogger_title sc_title">
-                                                            <a href="#"><?= $performance->title ?></a>
+                                                            <a href="#"><?= $performance->title . Yii::$app->language ?></a>
 
                                                         </h4>
                                                         <div class="reviews_summary blog_reviews">
@@ -405,7 +405,7 @@ $this->title = 'My Yii Application';
                                                             <div class="sc_team_item sc_team_item_1 odd first">
                                                                 <div class="sc_team_item_avatar">
                                                                     <img alt="<?= $artist->photo_name ?>"
-                                                                         src="<?= $artist->photo_path ?>">
+                                                                         src="/<?= $artist->photo_path ?>">
                                                                     <div class="sc_team_item_description">
                                                                         <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
                                                                             <a href="#" class="">More</a></div>

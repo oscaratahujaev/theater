@@ -37,8 +37,8 @@
     <div class="mainWrap without_sidebar">
         <div class="main">
             <div class="content">
+                <p></p>
                 <h2 class="sc_title sc_title_regular aligncenter margin_bottom_small">Pricing tables</h2>
-
                 <?php foreach ($repertiores as $index => $repertiore): ?>
                     <aside id="archives-<?= $index ?>" class="widgetTop widget widget_archive">
                         <h3 class="titleHide title"><?= $index ?></h3>
@@ -47,7 +47,7 @@
                                 <?php foreach ($repertiore['values'] as $item): ?>
                                     <div class="sc_pricing_columns sc_pricing_column_1">
                                         <ul class="columnsAnimate repertuar">
-                                            <li class="sc_pricing_data sc_pricing_title">Basic</li>
+                                            <li class="sc_pricing_data sc_pricing_title"><?= $item['date'] ?></li>
                                             <li class="sc_pricing_data sc_pricing_price">
                                                 <div class="sc_price_item">
                                                     <span class="sc_price_currency">$</span>
