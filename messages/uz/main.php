@@ -10,4 +10,4 @@
 use app\models\Translations;
 use yii\helpers\ArrayHelper;
 
-return ArrayHelper::map(Translations::find()->all(), 'code', 'name_ru');
+return ArrayHelper::map(Translations::find()->all(), 'code', 'name_uz');

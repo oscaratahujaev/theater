@@ -83,7 +83,7 @@ $config = [
             'class' => 'app\components\LangUrlManager',
             'rules' => [
                 '/' => 'site/index',
-                '<controller:\w+>/<action:\w+>/*' => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ]
         ],
         'language'=>'ru-RU',
