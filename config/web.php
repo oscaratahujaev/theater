@@ -44,7 +44,7 @@ $config = [
     ],
     'components' => [
         'request' => [
-            'class' => 'frontend\components\LangRequest',
+            'class' => 'app\components\LangRequest',
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'k_b-XKDlyya1ujlTxBb7hnXhIUt2OTHn',
 
@@ -85,18 +85,6 @@ $config = [
                 '/' => 'site/index',
                 '<controller:\w+>/<action:\w+>/*' => '<controller>/<action>',
             ]
-        ],
-        'i18n' => [
-            'translations' => [
-                '*' => [
-                    'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@app/messages',
-                    'sourceLanguage' => 'ru',
-                    'fileMap' => [
-                        //                        'app' => 'app.php',
-                    ],
-                ],
-            ],
         ],
         'language'=>'ru-RU',
         'i18n' => [
