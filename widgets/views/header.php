@@ -41,7 +41,6 @@ use yii\helpers\Url;
                                 <span class="menu_icon icon-thumbs-up"></span>
                                 Галерея
                             </a>
-
                         </li>
                         <li class="menu-item menu-item-has-children">
                             <a title="Posts pages" href="<?= Url::to("#contacts") ?> ">
