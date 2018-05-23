@@ -14,6 +14,11 @@ use yii\helpers\ArrayHelper;
 
 class Functions
 {
+
+
+    const STATUS_ACTIVE = 1;
+    const STATUS_INACTIVE = 0;
+
     public static function getStatus()
     {
         return ArrayHelper::map(RefStatus::find()->all(), 'id', 'name');

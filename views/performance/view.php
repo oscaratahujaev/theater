@@ -2,26 +2,17 @@
     <div id="topOfPage" class="topTabsWrap">
         <div class="main">
             <div class="speedBar">
-                <a class="home" href="<?= \yii\helpers\Url::to('/') ?>">Home</a>
+                <a class="home" href="index-2.html">Home</a>
                 <span class="breadcrumbs_delimiter">
-								<i class="icon-right-open-mini"></i>
-							</span>
-                <a class="<?= \yii\helpers\Url::to('/performance/') ?>" href="#">Performances</a>
+							<i class="icon-right-open-mini"></i>
+						</span>
+                <a class="all" href="#">All Posts</a>
                 <span class="breadcrumbs_delimiter">
-								<i class="icon-right-open-mini"></i>
-							</span>
-                <span class="current">Standard Gallery</span>
+							<i class="icon-right-open-mini"></i>
+						</span>
+                <span class="current">Pricing Tables</span>
             </div>
-            <h3 class="pageTitle h3">Standard Gallery</h3>
-            <div class="tabsButton">
-                <ul class="" role="tablist">
-                    <li class="" role="tab">
-                        <!-- <a href="#tabBlog">
-                             <span></span>
-                         </a>-->
-                    </li>
-                </ul>
-            </div>
+            <h3 class="pageTitle h3">Pricing Tables</h3>
         </div>
     </div>
 
@@ -36,11 +27,51 @@
                             <article class="post_content">
                                 <div class="post_info infoPost">
                                 </div>
-                                <h1 class="post_title entry-title"><?= $performance->title ?></h1>
+                                <h1 class="post_title entry-title"><?= $performance->title; ?></h1>
+
                                 <div class="post_text_area">
                                     <p> <?= $performance->description ?></p>
-
-
+                                    <h2>Actors</h2>
+                                    <div>
+                                        <?php if (!is_null($performance->performanceArtists)): ?>
+                                            <div class="container blue_section">
+                                                <div style="padding: 0 15px;">
+                                                    <div class="sc_section bg_tint_dark">
+                                                        <div class="sc_content main ">
+                                                            <div class="sc_team no_padding margin_top_middle margin_bottom_m20">
+                                                                <div class="sc_columns columnsWrap">
+                                                                    <?php foreach ($artists as $performanceArtist): ?>
+                                                                        <div class="columns1_4">
+                                                                            <div class="sc_team_item sc_team_item_1 odd first">
+                                                                                <div class="sc_team_item_avatar">
+                                                                                    <img alt="<?= $performanceArtist->artist->photo_name ?>"
+                                                                                         src="<?= '/' . $performanceArtist->artist->photo_path ?>">
+                                                                                    <div class="sc_team_item_description">
+                                                                                        <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
+                                                                                            <a href="#"
+                                                                                               class="">More</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="sc_team_item_info">
+                                                                                    <h3 class="sc_team_item_title"><?= $performanceArtist->artist->fullname ?></h3>
+                                                                                    <div class="sc_team_item_position theme_accent2">
+                                                                                        <?= substr($performanceArtist->artist->description, 0, 50) ?>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    <?php endforeach; ?>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
+                                    <br>
+                                    <h2>Gallery</h2>
                                     <div class='gallery gallery_style_1 galleryid-810 gallery-columns-6 gallery-size-thumbnail margin_bottom_mini'>
                                         <?php foreach ($files as $file): ?>
                                             <dl class='gallery-item'>
@@ -56,62 +87,11 @@
                                         <?php endforeach; ?>
                                     </div>
 
-                                    <p>Proin leo tellus, sollicitudin ac vestibulum sed, blandit vel neque. Nunc
-                                        sagittis mauris elementum elementum cursus. Curabitur in venenatis nisi, vel
-                                        mattis mauris. Ut lacinia dictum neque ut varius. Nullam pharetra pellentesque
-                                        auctor. In condimentum dolor id diam scelerisque, faucibus lacinia est aliquam.
-                                        Ut ultrices ultrices egestas. Vivamus faucibus pretium ligula, quis sollicitudin
-                                        justo semper et. Maecenas scelerisque orci tincidunt felis cursus, eu placerat
-                                        mauris aliquet. Curabitur aliquam purus justo. Maecenas pulvinar congue ipsum,
-                                        eu eleifend risus. Curabitur dignissim nulla sed posuere posuere. Vestibulum
-                                        eget turpis enim.</p>
-                                    <div class="tagsWrap">
-                                        <div class="postSharing">
-                                            <ul>
-                                                <li class="squareButton light ico share">
-                                                    <a class="icon-share shareDrop" title="Share" href="#">Share</a>
-                                                    <ul class="share-social shareDrop">
-                                                        <li>
-                                                            <a href="#" class="share-item"
-                                                               onclick="window.open('http://pinterest.com/', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=480, height=400, toolbar=0, status=0'); return false;">
-                                                                <img src="/images/pinterest_color.png" alt="pinterest">Pinterest</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="share-item"
-                                                               onclick="window.open('https://twitter.com/', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=480, height=400, toolbar=0, status=0'); return false;">
-                                                                <img src="/images/twitter_color.png" alt="twitter">Twitter</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="share-item"
-                                                               onclick="window.open('http://www.facebook.com/', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=480, height=400, toolbar=0, status=0'); return false;">
-                                                                <img src="/images/facebook_color.png" alt="facebook">Facebook</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="squareButton light ico">
-                                                    <a class="icon-eye" title="Views - 178" href="#">178</a>
-                                                </li>
-                                                <li class="squareButton light ico">
-                                                    <a class="icon-comment-1" title="Comments - 0" href="#">0</a>
-                                                </li>
-                                                <li class="squareButton light ico likeButton like" data-postid="810"
-                                                    data-likes="0" data-title-like="Like" data-title-dislike="Dislike">
-                                                    <a class="icon-heart-1" title="Like - 0" href="#">
-                                                        <span class="likePost">0</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="infoPost">
-                                            Tags: <a class="tag_link" href="#">post formats,</a>
-                                            <a class="tag_link" href="#">gallery</a>
-                                        </div>
-                                    </div>
                                 </div>
                             </article>
                         </div>
                     </section>
-
+                    <br><br>
                 </aside>
             </div>
         </div>
