@@ -29,7 +29,6 @@ use yii\helpers\Url;
                         </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="<?= Url::to("#performance") ?>"><?=Yii::t('main','Спектакли')?></a>
-
                         </li>
                         <li class="menu-item menu-item-has-children columns custom_view_item">
                             <a title="Tools and Pages" href="#repertuar">
