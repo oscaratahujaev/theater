@@ -34,54 +34,5 @@
             </a>
         </div>
     </div>
-    <div class="copyWrap">
-        <div class="copy main">
-            <div class="copyright">
-                <a href="http://themeforest.net/user/axiomthemes/portfolio">Axiom</a> &copy; 2015 All Rights
-                Reserved
-                <a href="#">Terms of Use</a>
-                and <a href="#">Privacy Policy</a>
-            </div>
-            <div class="copy_socials socPage">
-                <ul>
-                    <li>
-                        <a class="social_icons social_facebook facebook_image" target="_blank"
-                           href="http://facebook.com/">
-                            <span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social_icons social_pinterest pinterest_image" target="_blank"
-                           href="http://pinterest.com/">
-                            <span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social_icons social_twitter twitter_image" target="_blank"
-                           href="http://twitter.com/">
-                            <span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social_icons social_gplus gplus_image" target="_blank"
-                           href="http://gplus.com/">
-                            <span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social_icons social_linkedin linkedin_image" target="_blank"
-                           href="http://linkedin.com/">
-                            <span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social_icons social_vimeo vimeo_image" target="_blank"
-                           href="http://vimeo.com/">
-                            <span></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
 </div>
