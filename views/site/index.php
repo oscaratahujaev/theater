@@ -14,7 +14,7 @@ $this->title = 'My Yii Application';
             <ul>
                 <li data-transition="fade" data-slotamount="7" data-masterspeed="300"
                     data-saveperformance="off">
-                    <img src="images/transparent.png" alt="babbysitter-slider-ground"
+                    <img src="/images/transparent.png" alt="babbysitter-slider-ground"
                          data-bgposition="center bottom" data-bgfit="normal" data-bgrepeat="no-repeat">
                     <div class="tp-caption _bs_slider_title tp-fade skewtorightshort tp-resizeme rs-parallaxlevel-0"
                          data-x="center" data-hoffset="236" data-y="bottom" data-voffset="-397" data-speed="700"
@@ -49,7 +49,7 @@ $this->title = 'My Yii Application';
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-slideloop" data-easing="Power3.easeInOut"
                              data-speed="2" data-xs="-10" data-xe="10" data-ys="0" data-ye="0">
-                            <img src="images/babbysitter-slider-cloud-1a.png" alt="">
+                            <img src="/images/babbysitter-slider-cloud-1a.png" alt="">
                         </div>
                     </div>
                     <div class="tp-caption lft rs-parallaxlevel-4" data-x="center" data-hoffset="-73"
@@ -58,7 +58,7 @@ $this->title = 'My Yii Application';
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-slideloop" data-easing="Power3.easeInOut"
                              data-speed="2" data-xs="-15" data-xe="15" data-ys="0" data-ye="0">
-                            <img src="images/babbysitter-slider-cloud-2a.png" alt="">
+                            <img src="/images/babbysitter-slider-cloud-2a.png" alt="">
                         </div>
                     </div>
                     <div class="tp-caption lfl rs-parallaxlevel-3" data-x="center" data-hoffset="373"
@@ -67,7 +67,7 @@ $this->title = 'My Yii Application';
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-slideloop" data-easing="Power3.easeInOut"
                              data-speed="2" data-xs="-10" data-xe="10" data-ys="0" data-ye="0">
-                            <img src="images/babbysitter-slider-cloud-3a.png" alt="">
+                            <img src="/images/babbysitter-slider-cloud-3a.png" alt="">
                         </div>
                     </div>
                     <div class="tp-caption tp-fade rs-parallaxlevel-5" data-x="center" data-hoffset="-487"
@@ -76,7 +76,7 @@ $this->title = 'My Yii Application';
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-pulse" data-easing="Power3.easeInOut"
                              data-speed="2" data-zoomstart="1" data-zoomend="1.4">
-                            <img src="images/babbysitter-slider-star-1.png" alt="">
+                            <img src="/images/babbysitter-slider-star-1.png" alt="">
                         </div>
                     </div>
                     <div class="tp-caption tp-fade rs-parallaxlevel-6" data-x="center" data-hoffset="-373"
@@ -94,7 +94,7 @@ $this->title = 'My Yii Application';
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-pulse" data-easing="Power3.easeInOut"
                              data-speed="2" data-zoomstart="1" data-zoomend="1.4">
-                            <img src="images/babbysitter-slider-star-3.png" alt="">
+                            <img src="/images/babbysitter-slider-star-3.png" alt="">
                         </div>
                     </div>
                     <div class="tp-caption tp-fade rs-parallaxlevel-6" data-x="center" data-hoffset="198"
@@ -103,7 +103,7 @@ $this->title = 'My Yii Application';
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-pulse" data-easing="Power3.easeInOut"
                              data-speed="2" data-zoomstart="1" data-zoomend="1.4">
-                            <img src="images/babbysitter-slider-star-4.png" alt="">
+                            <img src="/images/babbysitter-slider-star-4.png" alt="">
                         </div>
                     </div>
                     <div class="tp-caption tp-fade rs-parallaxlevel-5" data-x="center" data-hoffset="484"
@@ -112,7 +112,7 @@ $this->title = 'My Yii Application';
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-pulse" data-easing="Power3.easeInOut"
                              data-speed="2" data-zoomstart="1" data-zoomend="1.4">
-                            <img src="images/babbysitter-slider-star-5.png" alt="">
+                            <img src="/images/babbysitter-slider-star-5.png" alt="">
                         </div>
                     </div>
                     <div class="tp-caption customin customout rs-parallaxlevel-10" data-x="center"
@@ -122,7 +122,7 @@ $this->title = 'My Yii Application';
                          data-speed="3500" data-start="2500" data-easing="Power0.easeIn" data-elementdelay="0.1"
                          data-endelementdelay="0.1" data-end="6000" data-endspeed="1000"
                          data-endeasing="Power0.easeInOut">
-                        <img src="images/babbysitter-slider-rocket.png" alt="">
+                        <img src="/images/babbysitter-slider-rocket.png" alt="">
                     </div>
                     <div class="tp-caption _bs_slider_text tp-fade tp-resizeme rs-parallaxlevel-0"
                          data-x="center" data-hoffset="144" data-y="bottom" data-voffset="-233" data-speed="700"
@@ -130,28 +130,28 @@ $this->title = 'My Yii Application';
                          data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
                          data-endspeed="300" data-captionhidden="on">
                         <a href='#'>
-                            <img src='images/social-icon-1.png' alt=''>
+                            <img src='/images/social-icon-1.png' alt=''>
                         </a>
                         <a href='#'>
-                            <img src='images/social-icon-2.png' alt=''>
+                            <img src='/images/social-icon-2.png' alt=''>
                         </a>
                         <a href='#'>
-                            <img src='images/social-icon-3.png' alt=''>
+                            <img src='/images/social-icon-3.png' alt=''>
                         </a>
                         <a href='#'>
-                            <img src='images/social-icon-4.png' alt=''>
+                            <img src='/images/social-icon-4.png' alt=''>
                         </a>
                     </div>
                     <div class="tp-caption tp-fade rs-parallaxlevel-0" data-x="center" data-hoffset="0"
                          data-y="bottom" data-voffset="40" data-speed="300" data-start="0"
                          data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1"
                          data-endspeed="300">
-                        <img src="images/babbysitter-slider-ground-3.png" alt="">
+                        <img src="/images/babbysitter-slider-ground-3.png" alt="">
                     </div>
                 </li>
                 <li data-transition="fade" data-slotamount="7" data-masterspeed="300"
                     data-saveperformance="off">
-                    <img src="images/transparent.png" alt="babbysitter-slider-ground"
+                    <img src="/images/transparent.png" alt="babbysitter-slider-ground"
                          data-bgposition="center bottom" data-bgfit="normal" data-bgrepeat="no-repeat">
                     <div class="tp-caption _bs_slider_title tp-fade skewtorightshort tp-resizeme rs-parallaxlevel-0"
                          data-x="center" data-hoffset="221" data-y="bottom" data-voffset="-410" data-speed="700"
@@ -177,14 +177,14 @@ $this->title = 'My Yii Application';
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-pulse" data-easing="Power3.easeInOut"
                              data-speed="2" data-zoomstart="1" data-zoomend="1.1">
-                            <img src="images/babbysitter-slider-sun.png" alt="">
+                            <img src="/images/babbysitter-slider-sun.png" alt="">
                         </div>
                     </div>
                     <div class="tp-caption lfb fadeout rs-parallaxlevel-0" data-x="center" data-hoffset="-170"
                          data-y="bottom" data-voffset="180" data-speed="700" data-start="900"
                          data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1"
                          data-endspeed="300">
-                        <img src="images/babbysitter-slider-girl.png" alt="">
+                        <img src="/images/babbysitter-slider-girl.png" alt="">
                     </div>
                     <div class="tp-caption lfl rs-parallaxlevel-3" data-x="center" data-hoffset="-492"
                          data-y="bottom" data-voffset="-348" data-speed="1000" data-start="2500"
@@ -192,7 +192,7 @@ $this->title = 'My Yii Application';
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-slideloop" data-easing="Power3.easeInOut"
                              data-speed="2" data-xs="-10" data-xe="10" data-ys="0" data-ye="0">
-                            <img src="images/babbysitter-slider-cloud-1a.png" alt="">
+                            <img src="/images/babbysitter-slider-cloud-1a.png" alt="">
                         </div>
                     </div>
                     <div class="tp-caption lft rs-parallaxlevel-4" data-x="center" data-hoffset="-73"
@@ -201,7 +201,7 @@ $this->title = 'My Yii Application';
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-slideloop" data-easing="Power3.easeInOut"
                              data-speed="2" data-xs="-15" data-xe="15" data-ys="0" data-ye="0">
-                            <img src="images/babbysitter-slider-cloud-2a.png" alt="">
+                            <img src="/images/babbysitter-slider-cloud-2a.png" alt="">
                         </div>
                     </div>
                     <div class="tp-caption lfl rs-parallaxlevel-5" data-x="center" data-hoffset="470"
@@ -210,7 +210,7 @@ $this->title = 'My Yii Application';
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-slideloop" data-easing="Power3.easeInOut"
                              data-speed="5" data-xs="-10" data-xe="10" data-ys="0" data-ye="0">
-                            <img src="images/babbysitter-slider-cloud-1a.png" alt="" data-ww="166.9390243902439"
+                            <img src="/images/babbysitter-slider-cloud-1a.png" alt="" data-ww="166.9390243902439"
                                  data-hh="486">
                         </div>
                     </div>
@@ -222,7 +222,7 @@ $this->title = 'My Yii Application';
                          data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power0.easeInOut">
                         <div class="tp-layer-inner-rotation   rs-wave" data-speed="1" data-angle="0"
                              data-radius="3" data-origin="3% 3%">
-                            <img src="images/babbysitter-slider-ufo.png" alt="">
+                            <img src="/images/babbysitter-slider-ufo.png" alt="">
                         </div>
                     </div>
                     <div class="tp-caption _bs_slider_text tp-fade tp-resizeme rs-parallaxlevel-0"
@@ -238,18 +238,18 @@ $this->title = 'My Yii Application';
                          data-y="bottom" data-voffset="40" data-speed="300" data-start="0"
                          data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1"
                          data-endspeed="300">
-                        <img src="images/babbysitter-slider-ground-3.png" alt="">
+                        <img src="/images/babbysitter-slider-ground-3.png" alt="">
                     </div>
                 </li>
                 <li data-transition="fade" data-slotamount="7" data-masterspeed="300"
                     data-saveperformance="off">
-                    <img src="images/transparent.png" alt="babbysitter-slider-ground"
+                    <img src="/images/transparent.png" alt="babbysitter-slider-ground"
                          data-bgposition="center bottom" data-bgfit="normal" data-bgrepeat="no-repeat">
                     <div class="tp-caption tp-fade rs-parallaxlevel-0" data-x="center" data-hoffset="57"
                          data-y="bottom" data-voffset="10" data-speed="1300" data-start="500"
                          data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1"
                          data-endspeed="300">
-                        <img src="images/babbysitter-slider-boy.png" alt="">
+                        <img src="/images/babbysitter-slider-boy.png" alt="">
                     </div>
                     <div class="tp-caption _bs_slider_title tp-fade skewtorightshort tp-resizeme rs-parallaxlevel-0"
                          data-x="center" data-hoffset="-351" data-y="bottom" data-voffset="-415"
@@ -269,7 +269,7 @@ $this->title = 'My Yii Application';
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-wave" data-speed="2" data-angle="0"
                              data-radius="10" data-origin="50% 50%">
-                            <img src="images/babbysitter-slider-butterfly-1.png" alt="">
+                            <img src="/images/babbysitter-slider-butterfly-1.png" alt="">
                         </div>
                     </div>
                     <div class="tp-caption lft rs-parallaxlevel-1" data-x="center" data-hoffset="-141"
@@ -278,7 +278,7 @@ $this->title = 'My Yii Application';
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-wave" data-speed="2" data-angle="0"
                              data-radius="10" data-origin="50% 50%">
-                            <img src="images/babbysitter-slider-butterfly-2.png" alt="">
+                            <img src="/images/babbysitter-slider-butterfly-2.png" alt="">
                         </div>
                     </div>
                     <div class="tp-caption lfl rs-parallaxlevel-2" data-x="center" data-hoffset="233"
@@ -287,7 +287,7 @@ $this->title = 'My Yii Application';
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-wave" data-speed="5" data-angle="0"
                              data-radius="10" data-origin="50% 50%">
-                            <img src="images/babbysitter-slider-butterfly-3.png" alt="">
+                            <img src="/images/babbysitter-slider-butterfly-3.png" alt="">
                         </div>
                     </div>
                     <div class="tp-caption _bs_slider_text tp-fade tp-resizeme rs-parallaxlevel-0"
@@ -303,7 +303,7 @@ $this->title = 'My Yii Application';
                          data-y="bottom" data-voffset="40" data-speed="300" data-start="0"
                          data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1"
                          data-endspeed="300">
-                        <img src="images/babbysitter-slider-ground-3.png" alt="">
+                        <img src="/images/babbysitter-slider-ground-3.png" alt="">
                     </div>
                 </li>
             </ul>

@@ -30,6 +30,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'author')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'status')->dropDownList(Functions::getStatus()) ?>
+
     <?= $form->field($model, 'mainPhoto')->fileInput([]) ?>
 
     <?php if (!Yii::$app->request->isAjax) { ?>

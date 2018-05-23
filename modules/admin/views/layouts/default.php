@@ -38,8 +38,9 @@ AppAsset::register($this);
     $menuItems = [
         ['label' => 'Спектакли', 'url' => ['/admin/default/performance']],
         ['label' => 'Репертуар', 'url' => ['/admin/default/repertuar']],
-        ['label' => 'Актёры','url' => ['/admin/artists/index']],
-        ['label' => 'Галерея','url' => ['/admin/default/gallery']],
+        ['label' => 'Актёры', 'url' => ['/admin/artists/index']],
+        ['label' => 'Галерея', 'url' => ['/admin/default/gallery']],
+        ['label' => 'Перевод', 'url' => ['/admin/translations/index']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];

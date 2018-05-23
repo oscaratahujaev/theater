@@ -44,8 +44,10 @@ $config = [
     ],
     'components' => [
         'request' => [
+            'class' => 'app\components\LangRequest',
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'k_b-XKDlyya1ujlTxBb7hnXhIUt2OTHn',
+
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -78,9 +80,13 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'class' => 'app\components\LangUrlManager',
             'rules' => [
-            ],
+                '/' => 'site/index',
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+            ]
         ],
+        'language'=>'ru-RU',
         'i18n' => [
             'translations' => [
                 '*' => [
@@ -88,11 +94,12 @@ $config = [
                     'basePath' => '@app/messages',
                     'sourceLanguage' => 'ru',
                     'fileMap' => [
-                        //                        'app' => 'app.php',
+                        //'main' => 'main.php',
                     ],
                 ],
             ],
         ],
+
 
     ],
     'params' => $params,

@@ -3,6 +3,7 @@
  *
  * header widget
  * */
+use app\widgets\WLang;
 use yii\helpers\Url;
 
 ?>
@@ -13,9 +14,9 @@ use yii\helpers\Url;
             <div class="main with_logo_left">
                 <div class="logo logo_left">
                     <a href="<?= Url::to('/') ?>">
-                        <img src="images/logo-mit-schrift.png" style="height: 78px;position: relative;top: -19px;"
+                        <img src="/images/logo-mit-schrift.png" style="height: 78px;position: relative;top: -19px;"
                              class="logo_main" alt="">
-                        <img src="images/logo-mit-schrift.png" style="height: 51px; top: -4px;position: relative;"
+                        <img src="/images/logo-mit-schrift.png" style="height: 51px; top: -4px;position: relative;"
                              class="logo_fixed" alt="">
                         <span class="logo_slogan"></span>
                     </a>
@@ -24,11 +25,10 @@ use yii\helpers\Url;
                 <nav role="navigation" class="menuTopWrap topMenuStyleLine">
                     <ul id="mainmenu" class="">
                         <li class="menu-item current-menu-ancestor menu-item-has-children">
-                            <a href="<?= Url::to('/') ?>">Главная</a>
+                            <a href="<?= Url::to('/') ?>"><?= Yii::t('main', 'home') ?></a>
                         </li>
                         <li class="menu-item menu-item-has-children">
-                            <a href="<?= Url::to("#performance") ?>">Спектакли</a>
-
+                            <a href="<?= Url::to("#performance") ?>"><?=Yii::t('main','Спектакли')?></a>
                         </li>
                         <li class="menu-item menu-item-has-children columns custom_view_item">
                             <a title="Tools and Pages" href="#repertuar">
@@ -49,14 +49,7 @@ use yii\helpers\Url;
                                 Контакты
                             </a>
                         </li>
-                        <div class="language">
-                            <a href="">
-                                <img width="20" src="/images/lang/Uzbekistan-icon.png" alt="lang">
-                            </a>
-                            <a href="">
-                                <img width="20" src="/images/lang/Russia-icon.png" alt="lang">
-                            </a>
-                        </div>
+                        <?= WLang::widget(); ?>
                     </ul>
                 </nav>
             </div>

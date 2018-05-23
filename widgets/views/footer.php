@@ -12,7 +12,7 @@
             <section>
                 <div class="logo">
                     <a href="index-2.html">
-                        <img src="images/logo-mit-schrift.png" style="width: 270px;" alt="">
+                        <img src="/images/logo-mit-schrift.png" style="width: 270px;" alt="">
                     </a>
                 </div>
                 <div class="contactAddress">
