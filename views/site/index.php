@@ -4,7 +4,7 @@
 
 use app\widgets\Navbar;
 
-$this->title = 'My Yii Application';
+$this->title = Yii::t("main", 'home');
 ?>
 <!--Slider home page-->
 <div id="mainslider_1"
@@ -324,10 +324,8 @@ $this->title = 'My Yii Application';
                             <div class="container">
                                 <div class="sc_content main ">
                                     <div class="aligncenter margin_bottom_middle">
-                                        <h2 class="sc_title style_2 sc_title_regular">Спектакллар</h2>
-                                        <h4 class="sc_undertitle style_1">We design digital toys not just for kids, but
-                                            with
-                                            kids</h4>
+                                        <h2 class="sc_title style_2 sc_title_regular"><?= Yii::t('main', 'Спектакли') ?></h2>
+
                                     </div>
                                     <div class="sc_blogger sc_blogger_horizontal style_image style_image_classes">
                                         <div class="columnsWrap">
@@ -381,7 +379,7 @@ $this->title = 'My Yii Application';
                                         <div class="">
                                             <div class="sc_button sc_button_style_global sc_button_size_banner squareButton global banner">
                                                 <a style="height: 74px;line-height: 78px;font-size: 20px; padding: 0 12px 0 11px;"
-                                                   href="#" class="">More cool classes</a>
+                                                   href="#" class=""><?= Yii::t('main', 'more') ?></a>
                                             </div>
                                         </div>
                                     </div>
@@ -396,8 +394,7 @@ $this->title = 'My Yii Application';
                                 <div class="">
                                     <div class="sc_section bg_tint_dark">
                                         <div class="sc_content main ">
-                                            <h2 class="sc_title sc_title_regular aligncenter">Available
-                                                Babysitters</h2>
+                                            <h2 class="sc_title sc_title_regular aligncenter"><?=Yii::t('main','Our artists')?></h2>
                                             <div class="sc_team no_padding margin_top_middle margin_bottom_m20">
                                                 <div class="sc_columns columnsWrap">
                                                     <?php foreach ($artists as $artist): ?>
@@ -408,7 +405,7 @@ $this->title = 'My Yii Application';
                                                                          src="/<?= $artist->photo_path ?>">
                                                                     <div class="sc_team_item_description">
                                                                         <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
-                                                                            <a href="#" class="">More</a></div>
+                                                                            <a href="#" class=""><?=Yii::t('main','info')?></a></div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="sc_team_item_info">
@@ -431,11 +428,10 @@ $this->title = 'My Yii Application';
                         <!--Sky Blue Section-->
                         <br>
                         <br>
-                        <section id="repertuar" class="post no_padding" style="width: 90%;margin-left: 5%;">
+                        <section id="repertuar" class="post no_padding" style="width: 90%;margin-left: 5%;margin-top:30px;">
                             <div class="container">
                                 <div class="">
-                                    <h2 class="sc_title sc_title_regular aligncenter margin_bottom_small">Pricing
-                                        tables</h2>
+                                    <h2 class="sc_title sc_title_regular aligncenter margin_bottom_small">Репертуар</h2>
                                     <div class="sc_pricing_table columns_4 alignCenter">
                                         <?php foreach ($repertoires as $repertoire): ?>
                                             <div class="sc_pricing_columns sc_pricing_column_1">
@@ -461,7 +457,7 @@ $this->title = 'My Yii Application';
                                         <div class="">
                                             <div class="sc_button sc_button_style_global sc_button_size_banner squareButton global banner">
                                                 <a style="height: 74px;line-height: 78px;font-size: 23px; padding: 0 12px 0 11px;"
-                                                   href="#" class="">More cool classes</a>
+                                                   href="#" class=""><?=Yii::t('main','more')?></a>
                                             </div>
                                         </div>
                                     </div>
