@@ -36,12 +36,12 @@ $this->title = Yii::t("main", 'home');
                          data-endspeed="300">Share this page with friends who need help, too.
                     </div>
                     <div class="tp-caption tp-fade rs-parallaxlevel-3" data-x="center" data-hoffset="-176"
-                         data-y="bottom" data-voffset="-126" data-speed="700" data-start="500"
+                         data-y="bottom" data-voffset="10" data-speed="700" data-start="500"
                          data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1"
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-wave" data-speed="2" data-angle="0"
                              data-radius="5" data-origin="50% 50%">
-                            <img src="/images/babbysitter-slider-babby.png" alt="" data-ww="433" data-hh="391">
+                            <img src="/images/babbysitter-slider-babby.png" alt="" data-ww="220" data-hh="491">
                         </div>
                     </div>
                     <div class="tp-caption lfl rs-parallaxlevel-3" data-x="center" data-hoffset="-492"
@@ -182,10 +182,10 @@ $this->title = Yii::t("main", 'home');
                         </div>
                     </div>
                     <div class="tp-caption lfb fadeout rs-parallaxlevel-0" data-x="center" data-hoffset="-170"
-                         data-y="bottom" data-voffset="180" data-speed="700" data-start="900"
+                         data-y="bottom" data-voffset="0" data-speed="700" data-start="900"
                          data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1"
                          data-endspeed="300">
-                        <img src="/images/babbysitter-slider-girl.png" alt="">
+                        <img src="/images/babbysitter-slider-girl.png" alt="" data-ww="200" data-hh="430">
                     </div>
                     <div class="tp-caption lfl rs-parallaxlevel-3" data-x="center" data-hoffset="-492"
                          data-y="bottom" data-voffset="-348" data-speed="1000" data-start="2500"

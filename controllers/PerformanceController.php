@@ -11,6 +11,8 @@ use yii\web\Controller;
 
 class PerformanceController extends Controller
 {
+    public $layout = "main";
+
     public function actionIndex()
     {
         $performances = Performance::find()->where(['status' => 1])->all();
