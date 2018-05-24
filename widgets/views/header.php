@@ -36,6 +36,12 @@ use yii\helpers\Url;
                                 <?= Yii::t('main', 'Репертуар') ?>
                             </a>
                         </li>
+                        <li class="menu-item menu-item-has-children columns custom_view_item">
+                            <a title="Tools and Pages" href="#artists">
+                                <span class="menu_icon icon-params"></span>
+                                <?= Yii::t('main', 'artists') ?>
+                            </a>
+                        </li>
                         <li class="menu-item menu-item-has-children">
                             <a title="Layouts and hovers" href="<?= Url::to("/gallery/index") ?>">
                                 <span class="menu_icon icon-thumbs-up"></span>

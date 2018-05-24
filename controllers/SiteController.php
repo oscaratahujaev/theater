@@ -71,7 +71,7 @@ class SiteController extends Controller
 
         $performances = Performance::find()->where(['status' => 1])->limit(3)->all();
         $repertoires = Repertuar::find()->where(['status' => 1])->limit(4)->all();
-        $actors = Artists::find()->limit(4)->all();
+        $actors = Artists::find()->all();
         return $this->render('index', [
             'performances' => $performances,
             'repertoires' => $repertoires,
@@ -197,4 +197,12 @@ class SiteController extends Controller
         ]);
     }
 
+
+    public function actionGallery()
+    {
+        $files = Functions::listGalleryFiles();
+        return $this->render('gallery', [
+            'files' => $files,
+        ]);
+    }
 }

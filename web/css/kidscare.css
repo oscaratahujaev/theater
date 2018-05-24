@@ -580,7 +580,7 @@ pre.code,
 .theme_dark,
 .sc_section.bg_tint_dark .pushButton > a,
 .topWrap .topMenuStyleLine > ul > li > a
-/*dark*/{color: #292929;}
+/*dark*/{color: #f5fbfb;}
 
 .theme_dark_bgc
 /*dark_bg*/{background-color: #292929;}
@@ -603,7 +603,7 @@ pre.code,
 .sidebar.widget_area .tabs_area ul.tabs > li.ui-state-active,
 .sidebar.widget_area .tabs_area ul.tabs > li.ui-state-active a,
 .widget_area .search-form .search-button a:hover
-/*white_bg*/{background-color: #ffffff;}
+/*white_bg*/{background-color: #ea624c;}
 
 /* Tribe Events */
 .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"],
@@ -942,7 +942,7 @@ header.fixedTopMenu .topWrap .logo .logo_text {line-height: 21px;}
 .topWrap .with_logo_center .topMenuStyleLine > ul > li > ul {top: 47px;}
 .topWrap .with_logo_center ul#mainmenu ul.menu-panel {top: 47px;}
 
-.topTabsWrap {background: #ea624c /*86d9d2*/; border-bottom-width: 0;}
+.topTabsWrap {background: #1BB4B9 /*86d9d2*/; border-bottom-width: 0;}
 .topTabsWrap .pageTitle {color: #ffffff; font-family: 'Ubuntu', sans-serif; font-weight: 700;}
 .topTabsWrap .speedBar {color: rgba(255, 255, 255, 0.7);}
 .topTabsWrap .speedBar .breadcrumbs_delimiter {color: #ffffff;}
