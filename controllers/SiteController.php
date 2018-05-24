@@ -67,7 +67,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $this->layout = "home.php";
+        $this->layout = "home";
 
         $performances = Performance::find()->where(['status' => 1])->limit(3)->all();
         $repertoires = Repertuar::find()->where(['status' => 1])->limit(4)->all();
@@ -189,8 +189,8 @@ class SiteController extends Controller
             }
         }
 
-//        debug($repertuars);
-//        die();
+        //        debug($repertuars);
+        //        die();
 
         return $this->render('repertiore', [
             'repertiores' => $repertuars,

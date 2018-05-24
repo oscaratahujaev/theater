@@ -7,6 +7,7 @@ use app\assets\AppAsset;
 use app\assets\HomeAsset;
 use app\widgets\Footer;
 use app\widgets\Header;
+use app\widgets\HeaderMain;
 use yii\helpers\Html;
 
 HomeAsset::register($this);
@@ -29,7 +30,7 @@ HomeAsset::register($this);
     <div class="boxedWrap">
 
         <!--Navigation Bar-->
-        <?= Header::widget() ?>
+        <?= HeaderMain::widget() ?>
         <!--Navigation Bar-->
 
 

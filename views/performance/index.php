@@ -41,14 +41,16 @@ $this->params['breadcrumbs'][] = $this->title;
                                                     </div>
                                                     <div class="sc_blogger_content">
                                                         <div class="sc_blogger_content_inner">
-                                                            <?= substr($performance->description, 0, 150) ?>
+                                                            <?= mb_substr($performance->description, 0, 100) ?>
                                                             ...
                                                         </div>
                                                     </div>
                                                 </a>
                                             </div>
                                             <h4 class="sc_blogger_title sc_title">
-                                                <a href="#"><?= $performance->title ?></a>
+                                                <a href="<?= Url::to(['/performance/view/?id=' . $performance->id]) ?>">
+                                                    <?= $performance->title ?>
+                                                </a>
 
                                             </h4>
                                             <div class="reviews_summary blog_reviews">
