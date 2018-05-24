@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 
 use app\widgets\Navbar;
+use yii\helpers\Url;
 
 $this->title = Yii::t("main", 'home');
 ?>
@@ -347,7 +348,7 @@ $this->title = Yii::t("main", 'home');
                                                             </a>
                                                         </div>
                                                         <h4 class="sc_blogger_title sc_title">
-                                                            <a href="#"><?= $performance->title . Yii::$app->language ?></a>
+                                                            <a href="#"><?= $performance->title . Yii::$app->language?></a>
 
                                                         </h4>
                                                         <div class="reviews_summary blog_reviews">
@@ -446,7 +447,7 @@ $this->title = Yii::t("main", 'home');
                                                     <li class="sc_pricing_data"><?= $repertoire->performance->author ?></li>
                                                     <li class="sc_pricing_data">
                                                         <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
-                                                            <a href="#" class="">Купить Билет</a>
+                                                            <a href="<?= Url::to('http://tickit.co')?>" class="">Купить Билет</a>
                                                         </div>
                                                     </li>
                                                 </ul>

@@ -178,10 +178,8 @@ class SiteController extends Controller
 
 
         $db = Yii::$app->getDb();
-        $query = $db->createCommand("SELECT *,  MONTH(r.date) AS month FROM repertuar r ORDER BY r.date;");
+        $query = $db->createCommand("SELECT *, p.title, p.title_uz,  MONTH(r.date) AS month FROM repertuar r JOIN performance p ON r.performance_id = p.id ORDER BY r.date;");
         $data = $query->queryAll();
-
-        $months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
         $repertuars = [];
         for ($i = 1; $i < 13; $i++) {
             foreach ($data as $item) {

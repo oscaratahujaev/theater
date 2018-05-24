@@ -154,3 +154,7 @@ a.desc:after {
 .widgetTabs .widgetTop ul:not(.tabs) > li:before {
     content: '';
 }
+.custom-button {
+    padding: 11px;
+    border-top: 1px solid #dddddd;
+}
