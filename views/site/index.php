@@ -6,6 +6,9 @@ use app\widgets\Navbar;
 use yii\helpers\Url;
 
 $this->title = Yii::t("main", 'home');
+$this->registerJsFile('/js/map.js');
+$this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4CRPir1lP-GbSV9aTU6CGGpripJA&callback=initMap');
+
 ?>
 <!--Slider home page-->
 <div id="mainslider_1"
@@ -29,12 +32,6 @@ $this->title = Yii::t("main", 'home');
                          data-start="2500" data-easing="Power3.easeInOut" data-splitin="none"
                          data-splitout="words" data-elementdelay="0.1" data-endelementdelay="0.1"
                          data-endspeed="300">SILK ROUTE MARIONETTES
-                    </div>
-                    <div class="tp-caption _bs_slider_text tp-fade tp-resizeme rs-parallaxlevel-0"
-                         data-x="center" data-hoffset="241" data-y="bottom" data-voffset="-301" data-speed="700"
-                         data-start="3500" data-easing="Power3.easeInOut" data-splitin="none"
-                         data-splitout="none" data-elementdelay="0.2" data-endelementdelay="0.1"
-                         data-endspeed="300"><?= Yii::t('main', 'share') ?>
                     </div>
                     <div class="tp-caption tp-fade rs-parallaxlevel-3" data-x="center" data-hoffset="-176"
                          data-y="bottom" data-voffset="10" data-speed="700" data-start="500"
@@ -350,15 +347,9 @@ $this->title = Yii::t("main", 'home');
                                                         </div>
                                                         <div class="sc_blogger_info">
                                                             <div class="squareButton light ico sc_blogger_more">
-                                                                <a class="icon-link" title="" href="#">
+                                                                <a class="icon-link" title=""
+                                                                   href="<?= Url::to('/performance/index') ?>">
                                                                     <?= Yii::t('main', 'more') ?></a>
-                                                            </div>
-                                                            <div class="sc_blogger_author">
-                                                                Posted by
-                                                                <a href="#" class="post_author">admin</a>
-                                                                <span class="separator">|</span>
-                                                                Views
-                                                                <span class="comments_number">176</span>
                                                             </div>
                                                         </div>
                                                     </article>
@@ -370,7 +361,8 @@ $this->title = Yii::t("main", 'home');
                                         <div class="">
                                             <div class="sc_button sc_button_style_global sc_button_size_banner squareButton global banner">
                                                 <a style="height: 74px;line-height: 78px;font-size: 20px; padding: 0 12px 0 11px;"
-                                                   href="#" class=""><?= Yii::t('main', 'more') ?></a>
+                                                   href="<?= Url::to('/performance/index') ?>"
+                                                   class=""><?= Yii::t('main', 'more') ?></a>
                                             </div>
                                         </div>
                                     </div>
@@ -394,15 +386,9 @@ $this->title = Yii::t("main", 'home');
                                                                 <div class="sc_team_item_avatar">
                                                                     <img alt="<?= $artist->photo_name ?>"
                                                                          src="/<?= $artist->photo_path ?>">
-                                                                    <div class="sc_team_item_description">
-                                                                        <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
-                                                                            <a href="#"
-                                                                               class=""><?= Yii::t('main', 'info') ?></a>
-                                                                        </div>
-                                                                    </div>
                                                                 </div>
                                                                 <div class="sc_team_item_info">
-                                                                    <h3 class="sc_team_item_title"><?= $artist->fullname ?></h3>
+                                                                    <h3 class="sc_team_item_title"><?=  $artist->fullname ?></h3>
                                                                     <div class="sc_team_item_position theme_accent2">
                                                                         <?= substr($artist->description, 0, 50) ?>
                                                                     </div>
@@ -425,7 +411,7 @@ $this->title = Yii::t("main", 'home');
                                  style="width: 90%;margin-left: 5%;margin-top:30px;">
                             <div class="container">
                                 <div class="">
-                                    <h2 class="sc_title sc_title_regular aligncenter margin_bottom_small"><?= Yii::t('main', 'repertuar') ?></h2>
+                                    <h2 class="sc_title sc_title_regular aligncenter margin_bottom_small"><?= Yii::t('main', 'Репертуар') ?></h2>
                                     <div class="sc_pricing_table columns_4 alignCenter">
                                         <?php foreach ($repertoires as $repertoire): ?>
                                             <div class="sc_pricing_columns sc_pricing_column_1">
@@ -452,7 +438,7 @@ $this->title = Yii::t("main", 'home');
                                         <div class="">
                                             <div class="sc_button sc_button_style_global sc_button_size_banner squareButton global banner">
                                                 <a style="height: 74px;line-height: 78px;font-size: 23px; padding: 0 12px 0 11px;"
-                                                   href="#" class=""><?= Yii::t('main', 'more') ?></a>
+                                                   href="<?=Url::to('/site/repertoire')?>" class=""><?= Yii::t('main', 'more') ?></a>
                                             </div>
                                         </div>
                                     </div>
@@ -508,7 +494,5 @@ $this->title = Yii::t("main", 'home');
     </div>
 </div>
 
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4CRPir1lP-GbSV9aTU6CGGpripJA&callback=initMap">
-</script>
+
 <!--Main Content-->

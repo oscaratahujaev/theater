@@ -35,7 +35,7 @@ use yii\helpers\Url;
                         <div class="container">
                             <article class="post_content">
                                 <div class="post_info infoPost">
-                                    Posted
+                                    <!--Posted
                                     <a href="#" class="post_date date updated">July 17, 2014</a>
                                     <span class="separator">|</span>
                                     by
@@ -46,7 +46,7 @@ use yii\helpers\Url;
                                     <span class="post_cats">
 													in
 													<a class="cat_link" href="#">Post formats fullwidth</a>
-												</span>
+												</span>-->
                                 </div>
                                 <div class="post_text_area">
                                     <p>Phasellus pretium justo lacus, vitae condimentum metus pharetra et. Ut lacus
