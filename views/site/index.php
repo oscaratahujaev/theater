@@ -341,7 +341,7 @@ $this->title = Yii::t("main", 'home');
                                                                 </div>
                                                                 <div class="sc_blogger_content">
                                                                     <div class="sc_blogger_content_inner">
-                                                                        <?= substr($performance->description, 0, 150) ?>
+                                                                        <?= mb_substr($performance->description, 0, 100) ?>
                                                                         ...
                                                                     </div>
                                                                 </div>
@@ -412,7 +412,7 @@ $this->title = Yii::t("main", 'home');
                                                                 <div class="sc_team_item_info">
                                                                     <h3 class="sc_team_item_title"><?= $artist->fullname ?></h3>
                                                                     <div class="sc_team_item_position theme_accent2">
-                                                                        <?= substr($artist->description, 0, 50) ?>
+                                                                        <?= mb_substr($artist->description, 0, 30) ?>
                                                                     </div>
                                                                 </div>
                                                             </div>
