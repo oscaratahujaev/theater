@@ -11,11 +11,11 @@ use yii\helpers\Url; ?>
     <div id="topOfPage" class="topTabsWrap">
         <div class="main">
             <div class="speedBar">
-                <a class="home" href="<?= Url::to('/') ?>"><?= Yii::t('main', 'Home') ?></a>
+                <a class="home" href="<?= Url::to('/') ?>"><?= Yii::t('main', 'home') ?></a>
                 <span class="breadcrumbs_delimiter">
 								<i class="icon-right-open-mini"></i>
 							</span>
-                <span class="current"><?= Yii::t('main', 'Repertoires') ?> </span>
+                <span class="current"><?= Yii::t('main', 'Репертуар') ?> </span>
             </div>
             <div class="tabsButton">
                 <ul class="" role="tablist">

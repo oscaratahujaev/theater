@@ -6,6 +6,9 @@ use app\widgets\Navbar;
 use yii\helpers\Url;
 
 $this->title = Yii::t("main", 'home');
+$this->registerJsFile('/js/map.js');
+$this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4CRPir1lP-GbSV9aTU6CGGpripJA&callback=initMap');
+
 ?>
 <!--Slider home page-->
 <div id="mainslider_1"
@@ -21,19 +24,14 @@ $this->title = Yii::t("main", 'home');
                          data-x="center" data-hoffset="236" data-y="bottom" data-voffset="-397" data-speed="700"
                          data-start="2000" data-easing="Power3.easeInOut" data-splitin="none"
                          data-splitout="words" data-elementdelay="0.1" data-endelementdelay="0.1"
-                         data-endspeed="300">WE WILL TAKE CARE
+                         data-endspeed="300">ТЕАТР МАРИОНЕТОК
+
                     </div>
                     <div class="tp-caption _bs_slider_title tp-fade skewtorightshort tp-resizeme rs-parallaxlevel-0"
-                         data-x="center" data-hoffset="180" data-y="bottom" data-voffset="-357" data-speed="700"
+                         data-x="center" data-hoffset="250" data-y="bottom" data-voffset="-357" data-speed="700"
                          data-start="2500" data-easing="Power3.easeInOut" data-splitin="none"
                          data-splitout="words" data-elementdelay="0.1" data-endelementdelay="0.1"
-                         data-endspeed="300">OF YOUR KIDS
-                    </div>
-                    <div class="tp-caption _bs_slider_text tp-fade tp-resizeme rs-parallaxlevel-0"
-                         data-x="center" data-hoffset="241" data-y="bottom" data-voffset="-301" data-speed="700"
-                         data-start="3500" data-easing="Power3.easeInOut" data-splitin="none"
-                         data-splitout="none" data-elementdelay="0.2" data-endelementdelay="0.1"
-                         data-endspeed="300">Share this page with friends who need help, too.
+                         data-endspeed="300">SILK ROUTE MARIONETTES
                     </div>
                     <div class="tp-caption tp-fade rs-parallaxlevel-3" data-x="center" data-hoffset="-176"
                          data-y="bottom" data-voffset="10" data-speed="700" data-start="500"
@@ -130,17 +128,11 @@ $this->title = Yii::t("main", 'home');
                          data-start="3900" data-easing="Power3.easeInOut" data-splitin="none"
                          data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
                          data-endspeed="300" data-captionhidden="on">
-                        <a href='#'>
-                            <img src='/images/social-icon-1.png' alt=''>
+                        <a href='<?= Url::to('https://www.instagram.com/silkroutemarionettes') ?>'>
+                            <img src='/images/instagram.png' alt=''>
                         </a>
-                        <a href='#'>
-                            <img src='/images/social-icon-2.png' alt=''>
-                        </a>
-                        <a href='#'>
-                            <img src='/images/social-icon-3.png' alt=''>
-                        </a>
-                        <a href='#'>
-                            <img src='/images/social-icon-4.png' alt=''>
+                        <a href='<?= Url::to('https://www.facebook.com/silkroutemarionettestashkent/?ref=br_rs') ?>'>
+                            <img src='/images/facebook3.png' alt=''>
                         </a>
                     </div>
                     <div class="tp-caption tp-fade rs-parallaxlevel-0" data-x="center" data-hoffset="0"
@@ -158,19 +150,19 @@ $this->title = Yii::t("main", 'home');
                          data-x="center" data-hoffset="221" data-y="bottom" data-voffset="-410" data-speed="700"
                          data-start="2000" data-easing="Power3.easeInOut" data-splitin="none"
                          data-splitout="words" data-elementdelay="0.1" data-endelementdelay="0.1"
-                         data-endspeed="300">MULTIFUNCTIONAL
+                         data-endspeed="300">АЛAДДИН И ЕГО
                     </div>
                     <div class="tp-caption _bs_slider_title tp-fade skewtorightshort tp-resizeme rs-parallaxlevel-0"
-                         data-x="center" data-hoffset="124" data-y="bottom" data-voffset="-370" data-speed="700"
+                         data-x="center" data-hoffset="200" data-y="bottom" data-voffset="-370" data-speed="700"
                          data-start="2500" data-easing="Power3.easeInOut" data-splitin="none"
                          data-splitout="words" data-elementdelay="0.1" data-endelementdelay="0.1"
-                         data-endspeed="300">WEBSITE
+                         data-endspeed="300">ВОЛШЕБНАЯ ЛАМПА
                     </div>
                     <div class="tp-caption _bs_slider_text tp-fade tp-resizeme rs-parallaxlevel-0"
                          data-x="center" data-hoffset="190" data-y="bottom" data-voffset="-320" data-speed="700"
                          data-start="3500" data-easing="Power3.easeInOut" data-splitin="none"
                          data-splitout="none" data-elementdelay="0.2" data-endelementdelay="0.1"
-                         data-endspeed="300">Optimized for Work with Touchscreen
+                         data-endspeed="300">
                     </div>
                     <div class="tp-caption sft rs-parallaxlevel-6" data-x="center" data-hoffset="-323"
                          data-y="bottom" data-voffset="-359" data-speed="1000" data-start="2000"
@@ -232,7 +224,7 @@ $this->title = Yii::t("main", 'home');
                          data-splitout="none" data-elementdelay="0.2" data-endelementdelay="0.1"
                          data-endspeed="300">
                         <div class="sc_button sc_button_style_global sc_button_size_huge alignright curveButton right squareButton global huge">
-                            <a href="#" class="">Buy Now</a>
+                            <a href="<?= Url::to('http://tickit.co') ?>" class=""><?= Yii::t('main', 'buyTicket') ?></a>
                         </div>
                     </div>
                     <div class="tp-caption tp-fade rs-parallaxlevel-0" data-x="center" data-hoffset="0"
@@ -253,16 +245,10 @@ $this->title = Yii::t("main", 'home');
                         <img src="/images/babbysitter-slider-boy.png" alt="">
                     </div>
                     <div class="tp-caption _bs_slider_title tp-fade skewtorightshort tp-resizeme rs-parallaxlevel-0"
-                         data-x="center" data-hoffset="-351" data-y="bottom" data-voffset="-415"
+                         data-x="center" data-hoffset="-351" data-y="bottom" data-voffset="-480"
                          data-speed="700" data-start="2000" data-easing="Power3.easeInOut" data-splitin="none"
                          data-splitout="words" data-elementdelay="0.1" data-endelementdelay="0.1"
-                         data-endspeed="300">NEED SUPPORT HELP?
-                    </div>
-                    <div class="tp-caption _bs_slider_text_big tp-fade tp-resizeme rs-parallaxlevel-0"
-                         data-x="center" data-hoffset="-430" data-y="bottom" data-voffset="-375"
-                         data-speed="700" data-start="3500" data-easing="Power3.easeInOut" data-splitin="none"
-                         data-splitout="none" data-elementdelay="0.2" data-endelementdelay="0.1"
-                         data-endspeed="300">Go To Axiom Tickets!
+                         data-endspeed="300">Необыкновенные музыканты?
                     </div>
                     <div class="tp-caption lfr rs-parallaxlevel-3" data-x="center" data-hoffset="-485"
                          data-y="bottom" data-voffset="-520" data-speed="1000" data-start="2500"
@@ -297,7 +283,7 @@ $this->title = Yii::t("main", 'home');
                          data-splitout="none" data-elementdelay="0.2" data-endelementdelay="0.1"
                          data-endspeed="300">
                         <div class="sc_button sc_button_style_global sc_button_size_banner alignright curveButton right squareButton global banner">
-                            <a href="http://axiom.ticksy.com/" class="">Open ticket</a>
+                            <a href="<?= Url::to('http://tickit.co') ?>" class=""><?= Yii::t('main', 'buyTicket') ?></a>
                         </div>
                     </div>
                     <div class="tp-caption tp-fade rs-parallaxlevel-0" data-x="center" data-hoffset="0"
@@ -334,21 +320,21 @@ $this->title = Yii::t("main", 'home');
                                                 <div class="columns1_3 column_item_1 odd first" style="float: right;">
                                                     <article class="sc_blogger_item">
                                                         <div class="thumb">
-                                                            <a href="#">
+                                                            <a href="<?= Url::to('/performance/view?id=' . $performance->id) ?>">
                                                                 <div>
                                                                     <img alt="<?= $performance->file_name ?>"
                                                                          src="/<?= $performance->file_path ?>">
                                                                 </div>
                                                                 <div class="sc_blogger_content">
                                                                     <div class="sc_blogger_content_inner">
-                                                                        <?= mb_substr($performance->description, 0, 100) ?>
+                                                                        <?= substr($performance->description, 0, 150) ?>
                                                                         ...
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </div>
                                                         <h4 class="sc_blogger_title sc_title">
-                                                            <a href="#"><?= $performance->title . Yii::$app->language?></a>
+                                                            <a href="#"><?= $performance->title . Yii::$app->language ?></a>
 
                                                         </h4>
                                                         <div class="reviews_summary blog_reviews">
@@ -361,14 +347,9 @@ $this->title = Yii::t("main", 'home');
                                                         </div>
                                                         <div class="sc_blogger_info">
                                                             <div class="squareButton light ico sc_blogger_more">
-                                                                <a class="icon-link" title="" href="#">More</a>
-                                                            </div>
-                                                            <div class="sc_blogger_author">
-                                                                Posted by
-                                                                <a href="#" class="post_author">admin</a>
-                                                                <span class="separator">|</span>
-                                                                Views
-                                                                <span class="comments_number">176</span>
+                                                                <a class="icon-link" title=""
+                                                                   href="<?= Url::to('/performance/index') ?>">
+                                                                    <?= Yii::t('main', 'more') ?></a>
                                                             </div>
                                                         </div>
                                                     </article>
@@ -380,7 +361,8 @@ $this->title = Yii::t("main", 'home');
                                         <div class="">
                                             <div class="sc_button sc_button_style_global sc_button_size_banner squareButton global banner">
                                                 <a style="height: 74px;line-height: 78px;font-size: 20px; padding: 0 12px 0 11px;"
-                                                   href="#" class=""><?= Yii::t('main', 'more') ?></a>
+                                                   href="<?= Url::to('/performance/index') ?>"
+                                                   class=""><?= Yii::t('main', 'more') ?></a>
                                             </div>
                                         </div>
                                     </div>
@@ -390,12 +372,12 @@ $this->title = Yii::t("main", 'home');
                         <!--Service Icons-->
 
                         <!--Available BabySitters-->
-                        <section class="blue_section">
+                        <section id="artists" class="blue_section">
                             <div class="container">
                                 <div class="">
                                     <div class="sc_section bg_tint_dark">
                                         <div class="sc_content main ">
-                                            <h2 class="sc_title sc_title_regular aligncenter"><?=Yii::t('main','Our artists')?></h2>
+                                            <h2 class="sc_title sc_title_regular aligncenter"><?= Yii::t('main', 'Our artists') ?></h2>
                                             <div class="sc_team no_padding margin_top_middle margin_bottom_m20">
                                                 <div class="sc_columns columnsWrap">
                                                     <?php foreach ($artists as $artist): ?>
@@ -404,15 +386,11 @@ $this->title = Yii::t("main", 'home');
                                                                 <div class="sc_team_item_avatar">
                                                                     <img alt="<?= $artist->photo_name ?>"
                                                                          src="/<?= $artist->photo_path ?>">
-                                                                    <div class="sc_team_item_description">
-                                                                        <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
-                                                                            <a href="#" class=""><?=Yii::t('main','info')?></a></div>
-                                                                    </div>
                                                                 </div>
                                                                 <div class="sc_team_item_info">
-                                                                    <h3 class="sc_team_item_title"><?= $artist->fullname ?></h3>
+                                                                    <h3 class="sc_team_item_title"><?=  $artist->fullname ?></h3>
                                                                     <div class="sc_team_item_position theme_accent2">
-                                                                        <?= mb_substr($artist->description, 0, 30) ?>
+                                                                        <?= substr($artist->description, 0, 50) ?>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -429,10 +407,11 @@ $this->title = Yii::t("main", 'home');
                         <!--Sky Blue Section-->
                         <br>
                         <br>
-                        <section id="repertuar" class="post no_padding" style="width: 90%;margin-left: 5%;margin-top:30px;">
+                        <section id="repertuar" class="post no_padding"
+                                 style="width: 90%;margin-left: 5%;margin-top:30px;">
                             <div class="container">
                                 <div class="">
-                                    <h2 class="sc_title sc_title_regular aligncenter margin_bottom_small">Репертуар</h2>
+                                    <h2 class="sc_title sc_title_regular aligncenter margin_bottom_small"><?= Yii::t('main', 'Репертуар') ?></h2>
                                     <div class="sc_pricing_table columns_4 alignCenter">
                                         <?php foreach ($repertoires as $repertoire): ?>
                                             <div class="sc_pricing_columns sc_pricing_column_1">
@@ -447,7 +426,8 @@ $this->title = Yii::t("main", 'home');
                                                     <li class="sc_pricing_data"><?= $repertoire->performance->author ?></li>
                                                     <li class="sc_pricing_data">
                                                         <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
-                                                            <a href="<?= Url::to('http://tickit.co')?>" class="">Купить Билет</a>
+                                                            <a href="<?= Url::to('http://tickit.co') ?>" class="">Купить
+                                                                Билет</a>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -458,7 +438,7 @@ $this->title = Yii::t("main", 'home');
                                         <div class="">
                                             <div class="sc_button sc_button_style_global sc_button_size_banner squareButton global banner">
                                                 <a style="height: 74px;line-height: 78px;font-size: 23px; padding: 0 12px 0 11px;"
-                                                   href="#" class=""><?=Yii::t('main','more')?></a>
+                                                   href="<?=Url::to('/site/repertoire')?>" class=""><?= Yii::t('main', 'more') ?></a>
                                             </div>
                                         </div>
                                     </div>
@@ -514,7 +494,5 @@ $this->title = Yii::t("main", 'home');
     </div>
 </div>
 
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4CRPir1lP-GbSV9aTU6CGGpripJA&callback=initMap">
-</script>
+
 <!--Main Content-->

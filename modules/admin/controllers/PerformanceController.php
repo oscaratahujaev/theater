@@ -73,6 +73,7 @@ class PerformanceController extends Controller
         $request = Yii::$app->request;
 
         $artistSearchModel = new PerformanceArtistSearch();
+        $artistSearchModel->performance_id = $id;
         $artistDataProvider = $artistSearchModel->search(Yii::$app->request->queryParams);
 
         if ($request->isAjax) {

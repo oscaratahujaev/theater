@@ -30,8 +30,8 @@ class HomeAsset extends AssetBundle
         'js/custom/shortcodes_init.js',
         'js/custom/_utils.js',
         'js/custom/_front.js',
-        'js/custom/_googlemap_init.js',
-        'js/map.js',
+//        'js/custom/_googlemap_init.js',
+//        'js/map.js',
 
 
     ];
