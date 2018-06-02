@@ -11,6 +11,7 @@ use Yii;
  * @property string $code
  * @property string $name_ru
  * @property string $name_uz
+ * @property string $name_en
  */
 class Translations extends \yii\db\ActiveRecord
 {
@@ -28,8 +29,8 @@ class Translations extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['code', 'name_ru', 'name_uz'], 'required'],
-            [['code', 'name_ru', 'name_uz'], 'string', 'max' => 255],
+            [['code', 'name_ru', 'name_uz', 'name_en'], 'required'],
+            [['code', 'name_ru', 'name_uz', 'name_en'], 'string', 'max' => 255],
         ];
     }
 
@@ -43,6 +44,7 @@ class Translations extends \yii\db\ActiveRecord
             'code' => Yii::t('main', 'Code'),
             'name_ru' => Yii::t('main', 'Name Ru'),
             'name_uz' => Yii::t('main', 'Name Uz'),
+            'name_en' => Yii::t('main', 'Name En'),
         ];
     }
 }

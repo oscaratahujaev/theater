@@ -17,12 +17,19 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'title_uz')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'description')->widget(CKEditor::className(), [
         'options' => ['rows' => 6],
         'preset' => 'basic'
     ]) ?>
 
     <?= $form->field($model, 'description_uz')->widget(CKEditor::className(), [
+        'options' => ['rows' => 6],
+        'preset' => 'basic'
+    ]) ?>
+
+    <?= $form->field($model, 'description_en')->widget(CKEditor::className(), [
         'options' => ['rows' => 6],
         'preset' => 'basic'
     ]) ?>

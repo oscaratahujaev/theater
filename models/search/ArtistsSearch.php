@@ -19,7 +19,7 @@ class ArtistsSearch extends Artists
     {
         return [
             [['id'], 'integer'],
-            [['fullname', 'description','description_uz', 'photo_path', 'photo_name'], 'safe'],
+            [['fullname', 'description_ru','description_uz','description_en', 'photo_path', 'photo_name'], 'safe'],
         ];
     }
 
@@ -60,8 +60,9 @@ class ArtistsSearch extends Artists
         ]);
 
         $query->andFilterWhere(['like', 'fullname', $this->fullname])
-            ->andFilterWhere(['like', 'description', $this->description])
+            ->andFilterWhere(['like', 'description_ru', $this->description_ru])
             ->andFilterWhere(['like', 'description_uz', $this->description_uz])
+            ->andFilterWhere(['like', 'description_en', $this->description_en])
             ->andFilterWhere(['like', 'photo_path', $this->photo_path])
             ->andFilterWhere(['like', 'photo_name', $this->photo_name]);
 

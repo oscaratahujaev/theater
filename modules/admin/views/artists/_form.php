@@ -24,6 +24,11 @@ use yii\widgets\ActiveForm;
         'preset' => 'basic'
     ]) ?>
 
+    <?= $form->field($model, 'description_en')->widget(CKEditor::className(), [
+        'options' => ['rows' => 6],
+        'preset' => 'basic'
+    ]) ?>
+
     <?= $form->field($model, 'mainPhoto')->fileInput([]) ?>
 
     <?php if (!Yii::$app->request->isAjax) { ?>

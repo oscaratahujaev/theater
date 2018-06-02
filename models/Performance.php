@@ -11,10 +11,12 @@ use yii\web\UploadedFile;
  * This is the model class for table "performance".
  *
  * @property int $id
- * @property string $title
+ * @property string $title_ru
  * @property string $title_uz
- * @property string $description
+ * @property string $title_en
+ * @property string $description_ru
  * @property string $description_uz
+ * @property string $description_en
  * @property string $author
  * @property string $file_name
  * @property string $file_path
@@ -26,8 +28,6 @@ use yii\web\UploadedFile;
  */
 class Performance extends \yii\db\ActiveRecord
 {
-
-
     public $mainPhoto;
 
     public function behaviors()
@@ -35,7 +35,7 @@ class Performance extends \yii\db\ActiveRecord
         return [
             [
                 'class' => CyrillicSlugBehavior::className(),
-                'attribute' => 'title',
+                'attribute' => 'title_ru',
                 //'slugAttribute' => 'slug',
             ],
         ];
@@ -56,10 +56,10 @@ class Performance extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['description', 'description_uz', 'file_name', 'file_path', 'slug'], 'string'],
+            [['description_ru', 'description_uz', 'description_en', 'file_name', 'file_path', 'slug'], 'string'],
             [['status'], 'integer'],
-            ['title', 'unique'],
-            [['title', 'author', 'title_uz'], 'string', 'max' => 255],
+            ['title_ru', 'unique'],
+            [['title_ru', 'author', 'title_uz', 'title_en'], 'string', 'max' => 255],
             [['mainPhoto'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg'],
             [['status'], 'exist', 'skipOnError' => true, 'targetClass' => RefStatus::className(), 'targetAttribute' => ['status' => 'id']],
         ];
@@ -72,10 +72,12 @@ class Performance extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('main', 'ID'),
-            'title' => Yii::t('main', 'Навзание'),
+            'title_ru' => Yii::t('main', 'Навзание на Рус.'),
             'title_uz' => Yii::t('main', 'Навзание на узб.'),
-            'description' => Yii::t('main', 'Описание'),
+            'title_en' => Yii::t('main', 'Навзание на анг.'),
+            'description_ru' => Yii::t('main', 'Описание на Рус.'),
             'description_uz' => Yii::t('main', 'Описание на узб.'),
+            'description_en' => Yii::t('main', 'Описание на анг.'),
             'author' => Yii::t('main', 'Автор'),
             'file_name' => Yii::t('main', 'File Name'),
             'file_path' => Yii::t('main', 'File Path'),

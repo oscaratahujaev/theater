@@ -19,7 +19,7 @@ class PerformanceSearch extends Performance
     {
         return [
             [['id', 'status'], 'integer'],
-            [['title', 'description', 'author', 'file_name', 'file_path'], 'safe'],
+            [['title_ru', 'description', 'author', 'file_name', 'file_path'], 'safe'],
         ];
     }
 
@@ -60,8 +60,8 @@ class PerformanceSearch extends Performance
             'status' => $this->status,
         ]);
 
-        $query->andFilterWhere(['like', 'title', $this->title])
-            ->andFilterWhere(['like', 'description', $this->description])
+        $query->andFilterWhere(['like', 'title_ru', $this->title_ru])
+            ->andFilterWhere(['like', 'description_ru', $this->description_ru])
             ->andFilterWhere(['like', 'author', $this->author])
             ->andFilterWhere(['like', 'file_name', $this->file_name]);
 
