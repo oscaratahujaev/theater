@@ -11,6 +11,7 @@ use Yii;
  * @property string $url
  * @property string $local
  * @property string $name
+ * @property string $image
  * @property int $default
  * @property int $date_update
  * @property int $date_create
@@ -48,7 +49,7 @@ class Lang extends \yii\db\ActiveRecord
         return [
             [['url', 'local', 'name', 'date_update', 'date_create'], 'required'],
             [['default', 'date_update', 'date_create'], 'integer'],
-            [['url', 'local', 'name'], 'string', 'max' => 255],
+            [['url', 'local', 'name','image'], 'string', 'max' => 255],
         ];
     }
 
@@ -74,6 +75,8 @@ class Lang extends \yii\db\ActiveRecord
     //Получение текущего объекта языка
     static function getCurrent()
     {
+//        debug(self::$current);
+//        exit;
         if( self::$current === null ){
             self::$current = self::getDefaultLang();
         }

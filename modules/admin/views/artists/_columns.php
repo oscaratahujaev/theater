@@ -28,6 +28,12 @@ return [
         'attribute' => 'description_uz',
         'format' => 'raw',
     ],
+
+    [
+        'class' => '\kartik\grid\DataColumn',
+        'attribute' => 'description_en',
+        'format' => 'raw',
+    ],
     //    [
     //        'class'=>'\kartik\grid\DataColumn',
     //        'attribute'=>'photo_path',

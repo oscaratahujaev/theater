@@ -19,7 +19,7 @@ class TranslationsSearch extends Translations
     {
         return [
             [['id'], 'integer'],
-            [['code', 'name_ru', 'name_uz'], 'safe'],
+            [['code', 'name_ru', 'name_uz', 'name_en'], 'safe'],
         ];
     }
 
@@ -61,6 +61,7 @@ class TranslationsSearch extends Translations
 
         $query->andFilterWhere(['like', 'code', $this->code])
             ->andFilterWhere(['like', 'name_ru', $this->name_ru])
+            ->andFilterWhere(['like', 'name_en', $this->name_en])
             ->andFilterWhere(['like', 'name_uz', $this->name_uz]);
 
         return $dataProvider;

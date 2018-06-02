@@ -2,6 +2,7 @@
 
 /* @var $this yii\web\View */
 
+use app\models\Lang;
 use app\widgets\Navbar;
 use yii\helpers\Url;
 
@@ -10,6 +11,7 @@ $this->registerJsFile('/js/map.js');
 $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4CRPir1lP-GbSV9aTU6CGGpripJA&callback=initMap');
 
 ?>
+
 <!--Slider home page-->
 <div id="mainslider_1"
      class="sliderHomeBullets staticSlider slider_engine_revo slider_alias_revo-babbysitter mainslider_1">
@@ -24,14 +26,14 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                          data-x="center" data-hoffset="236" data-y="bottom" data-voffset="-397" data-speed="700"
                          data-start="2000" data-easing="Power3.easeInOut" data-splitin="none"
                          data-splitout="words" data-elementdelay="0.1" data-endelementdelay="0.1"
-                         data-endspeed="300">ТЕАТР МАРИОНЕТОК
+                         data-endspeed="300">
 
                     </div>
                     <div class="tp-caption _bs_slider_title tp-fade skewtorightshort tp-resizeme rs-parallaxlevel-0"
                          data-x="center" data-hoffset="250" data-y="bottom" data-voffset="-357" data-speed="700"
                          data-start="2500" data-easing="Power3.easeInOut" data-splitin="none"
                          data-splitout="words" data-elementdelay="0.1" data-endelementdelay="0.1"
-                         data-endspeed="300">SILK ROUTE MARIONETTES
+                         data-endspeed="300"><?=Yii::t('main','title')?>
                     </div>
                     <div class="tp-caption tp-fade rs-parallaxlevel-3" data-x="center" data-hoffset="-176"
                          data-y="bottom" data-voffset="10" data-speed="700" data-start="500"
@@ -316,6 +318,7 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                                     </div>
                                     <div class="sc_blogger sc_blogger_horizontal style_image style_image_classes">
                                         <div class="columnsWrap">
+
                                             <?php foreach ($performances as $performance): ?>
                                                 <div class="columns1_3 column_item_1 odd first" style="float: right;">
                                                     <article class="sc_blogger_item">
@@ -327,19 +330,19 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                                                                 </div>
                                                                 <div class="sc_blogger_content">
                                                                     <div class="sc_blogger_content_inner">
-                                                                        <?= substr($performance->description, 0, 150) ?>
+                                                                        <?= mb_substr($performance->{'description_' . Lang::getCurrent()->url}, 0, 100) ?>
                                                                         ...
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </div>
                                                         <h4 class="sc_blogger_title sc_title">
-                                                            <a href="#"><?= $performance->title . Yii::$app->language ?></a>
+                                                            <a href="#"><?= $performance->{'title_' . Lang::getCurrent()->url} ?></a>
 
                                                         </h4>
                                                         <div class="reviews_summary blog_reviews">
                                                             <div class="criteria_summary criteria_row">
-                                                                <span>Режиссер:
+                                                                <span><?=Yii::t('main','Producer')?>:
                                                                     <strong><?= $performance->author ?></strong></span>
                                                             </div>
                                                         </div>
@@ -390,7 +393,7 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                                                                 <div class="sc_team_item_info">
                                                                     <h3 class="sc_team_item_title"><?=  $artist->fullname ?></h3>
                                                                     <div class="sc_team_item_position theme_accent2">
-                                                                        <?= substr($artist->description, 0, 50) ?>
+                                                                        <?= mb_substr($artist->{'description_'.Lang::getCurrent()->url}, 0, 50) ?>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -417,7 +420,7 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                                             <div class="sc_pricing_columns sc_pricing_column_1">
                                                 <ul class="columnsAnimate">
                                                     <li class="sc_pricing_data sc_pricing_title">
-                                                        <?= $repertoire->performance->title ?>
+                                                        <?= $repertoire->performance->{'title_'.Lang::getCurrent()->url} ?>
                                                     </li>
                                                     <?php $datetime = new DateTime($repertoire->date) ?>
                                                     <li class="sc_pricing_data"><?= $datetime->format('d M, Y') ?></li>
@@ -426,8 +429,7 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                                                     <li class="sc_pricing_data"><?= $repertoire->performance->author ?></li>
                                                     <li class="sc_pricing_data">
                                                         <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
-                                                            <a href="<?= Url::to('http://tickit.co') ?>" class="">Купить
-                                                                Билет</a>
+                                                            <a href="<?= Url::to('http://tickit.co') ?>" class=""><?=Yii::t('main','buyTicket')?></a>
                                                         </div>
                                                     </li>
                                                 </ul>
