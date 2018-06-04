@@ -14,7 +14,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'fullname')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'description')->widget(CKEditor::className(), [
+    <?= $form->field($model, 'description_ru')->widget(CKEditor::className(), [
         'options' => ['rows' => 6],
         'preset' => 'basic'
     ]) ?>

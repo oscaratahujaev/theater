@@ -154,15 +154,39 @@ a.desc:after {
 .widgetTabs .widgetTop ul:not(.tabs) > li:before {
     content: '';
 }
+
 .custom-button {
     padding: 11px;
     border-top: 1px solid #dddddd;
 }
 
 .rotating {
-    -webkit-animation: rotating 2s linear infinite;
-    -moz-animation: rotating 2s linear infinite;
-    -ms-animation: rotating 2s linear infinite;
-    -o-animation: rotating 2s linear infinite;
-    animation: rotating 2s linear infinite;
+    -webkit-animation: rotating 3s linear infinite;
+    -moz-animation: rotating 3s linear infinite;
+    -ms-animation: rotating 3s linear infinite;
+    -o-animation: rotating 3s linear infinite;
+    animation: rotating 3s linear infinite;
+}
+
+.my-background {
+    position: absolute;
+    width: 15%;
+    margin-top: 150px;
+}
+
+.my-background2 {
+    position: absolute;
+    right: 10px;
+    width: 15%;
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .my-background2 {
+        display: none;
+    }
+
+    .my-background {
+        display: none;
+    }
 }

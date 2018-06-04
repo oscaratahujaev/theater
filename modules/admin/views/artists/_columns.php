@@ -20,7 +20,7 @@ return [
     ],
     [
         'class' => '\kartik\grid\DataColumn',
-        'attribute' => 'description',
+        'attribute' => 'description_ru',
         'format' => 'raw',
     ],
     [

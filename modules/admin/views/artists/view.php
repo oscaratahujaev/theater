@@ -12,7 +12,7 @@ use yii\widgets\DetailView;
         'attributes' => [
             'id',
             'fullname',
-            'description:ntext',
+            'description_ru',
             'photo_path',
             'photo_name',
         ],

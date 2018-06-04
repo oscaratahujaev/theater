@@ -22,6 +22,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
     <div class="mainWrap without_sidebar">
+        <div class="my-background">
+            <img src="/images/new-sun.png" alt="">
+        </div>
+        <div class="my-background2">
+            <img src="/images/new-sun.png" alt="">
+        </div>
+
         <div class="main">
             <section id="performance">
                 <div class="container">

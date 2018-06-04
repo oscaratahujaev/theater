@@ -18,9 +18,9 @@ return [
     [
         'class' => '\kartik\grid\DataColumn',
         'attribute' => 'performance_id',
-        'filter'=>\yii\helpers\ArrayHelper::map(\app\models\Performance::find()->all(),'id','title'),
+        'filter'=>\yii\helpers\ArrayHelper::map(\app\models\Performance::find()->all(),'id','title_ru'),
         'value' => function ($data) {
-            return $data->performance ? $data->performance->title : "";
+            return $data->performance ? $data->performance->title_ru : "";
         }
     ],
     [

@@ -15,7 +15,7 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'performance_id')->dropDownList(
-        ArrayHelper::map(\app\models\Performance::find()->all(), 'id', 'title')
+        ArrayHelper::map(\app\models\Performance::find()->all(), 'id', 'title_ru')
     ) ?>
 
     <?php

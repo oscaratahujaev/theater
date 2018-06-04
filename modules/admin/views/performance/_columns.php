@@ -13,7 +13,7 @@ return [
     ],
     [
         'class' => '\kartik\grid\DataColumn',
-        'attribute' => 'title',
+        'attribute' => 'title_ru',
     ],
     //    [
     //        'class'=>'\kartik\grid\DataColumn',

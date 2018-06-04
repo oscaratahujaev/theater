@@ -14,9 +14,9 @@ use yii\helpers\Url;
             <div class="main with_logo_left">
                 <div class="logo logo_left">
                     <a href="<?= Url::to('/') ?>">
-                        <img src="/images/logo-mit-schrift.png" style="height: 78px;position: relative;top: -19px;"
+                        <img src="/images/new-logo.png" style="height: 78px;position: relative;top: -25px;"
                              class="logo_main" alt="">
-                        <img src="/images/logo-mit-schrift.png" style="height: 51px; top: -4px;position: relative;"
+                        <img src="/images/new-logo.png" style="height: 51px; top: -4px;position: relative;"
                              class="logo_fixed" alt="">
                         <span class="logo_slogan"></span>
                     </a>

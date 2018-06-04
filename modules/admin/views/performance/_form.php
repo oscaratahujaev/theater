@@ -13,13 +13,13 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
-    <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'title_ru')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'title_uz')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'description')->widget(CKEditor::className(), [
+    <?= $form->field($model, 'description_ru')->widget(CKEditor::className(), [
         'options' => ['rows' => 6],
         'preset' => 'basic'
     ]) ?>

@@ -27,13 +27,12 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                          data-start="2000" data-easing="Power3.easeInOut" data-splitin="none"
                          data-splitout="words" data-elementdelay="0.1" data-endelementdelay="0.1"
                          data-endspeed="300">
-
                     </div>
                     <div class="tp-caption _bs_slider_title tp-fade skewtorightshort tp-resizeme rs-parallaxlevel-0"
                          data-x="center" data-hoffset="250" data-y="bottom" data-voffset="-357" data-speed="700"
                          data-start="2500" data-easing="Power3.easeInOut" data-splitin="none"
                          data-splitout="words" data-elementdelay="0.1" data-endelementdelay="0.1"
-                         data-endspeed="300"><?=Yii::t('main','title')?>
+                         data-endspeed="300"><?= Yii::t('main', 'title') ?>
                     </div>
                     <div class="tp-caption tp-fade rs-parallaxlevel-3" data-x="center" data-hoffset="-176"
                          data-y="bottom" data-voffset="10" data-speed="700" data-start="500"
@@ -50,7 +49,8 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                          data-endspeed="300">
                         <div class="tp-layer-inner-rotation   rs-slideloop" data-easing="Power3.easeInOut"
                              data-speed="2" data-xs="-10" data-xe="10" data-ys="0" data-ye="0">
-                            <img src="/images/babbysitter-slider-cloud-1a.png" alt="">
+                            <img src="/images/babbysitter-slider-cloud-1a.png" alt="" style="width:200px;"
+                                 class="rotating">
                         </div>
                     </div>
                     <div class="tp-caption lft rs-parallaxlevel-4" data-x="center" data-hoffset="-73"
@@ -185,10 +185,10 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                          data-y="bottom" data-voffset="-348" data-speed="1000" data-start="2500"
                          data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1"
                          data-endspeed="300">
-                        <div class="tp-layer-inner-rotation   rs-slideloop" data-easing="Power3.easeInOut"
-                             data-speed="2" data-xs="-10" data-xe="10" data-ys="0" data-ye="0">
-                            <img src="/images/babbysitter-slider-cloud-1a.png" alt="">
-                        </div>
+                        <!--                        <div class="tp-layer-inner-rotation   rs-slideloop" data-easing="Power3.easeInOut"-->
+                        <!--                             data-speed="2" data-xs="-10" data-xe="10" data-ys="0" data-ye="0">-->
+                        <!--                            <img src="/images/babbysitter-slider-cloud-1a.png" alt="">-->
+                        <!--                        </div>-->
                     </div>
                     <div class="tp-caption lft rs-parallaxlevel-4" data-x="center" data-hoffset="-73"
                          data-y="bottom" data-voffset="-548" data-speed="1000" data-start="3500"
@@ -203,11 +203,11 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                          data-y="bottom" data-voffset="-440" data-speed="1000" data-start="4500"
                          data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1"
                          data-endspeed="300">
-                        <div class="tp-layer-inner-rotation   rs-slideloop" data-easing="Power3.easeInOut"
-                             data-speed="5" data-xs="-10" data-xe="10" data-ys="0" data-ye="0">
-                            <img src="/images/babbysitter-slider-cloud-1a.png" alt="" data-ww="166.9390243902439"
-                                 data-hh="486">
-                        </div>
+                        <!--                        <div class="tp-layer-inner-rotation   rs-slideloop" data-easing="Power3.easeInOut"-->
+                        <!--                             data-speed="5" data-xs="-10" data-xe="10" data-ys="0" data-ye="0">-->
+                        <!--                            <img src="/images/babbysitter-slider-cloud-1a.png" alt="" data-ww="166.9390243902439"-->
+                        <!--                                 data-hh="486">-->
+                        <!--                        </div>-->
                     </div>
                     <div class="tp-caption customin customout rs-parallaxlevel-10" data-x="center"
                          data-hoffset="300" data-y="bottom" data-voffset="-85"
@@ -244,7 +244,7 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                          data-y="bottom" data-voffset="10" data-speed="1300" data-start="500"
                          data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1"
                          data-endspeed="300">
-                        <img src="/images/babbysitter-slider-boy.png" alt="">
+                        <img src="/images/babbysitter-slider-boy.png" alt="" style="height:450px;">
                     </div>
                     <div class="tp-caption _bs_slider_title tp-fade skewtorightshort tp-resizeme rs-parallaxlevel-0"
                          data-x="center" data-hoffset="-351" data-y="bottom" data-voffset="-480"
@@ -311,9 +311,17 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                         <!--Service Icons-->
                         <section id="performance">
                             <div class="container">
+                                <div class="my-background">
+                                    <img src="/images/new-sun.png" alt="">
+                                </div>
+                                <div class="my-background2">
+                                    <img src="/images/new-sun.png" alt="">
+                                </div>
                                 <div class="sc_content main ">
                                     <div class="aligncenter margin_bottom_middle">
-                                        <h2 class="sc_title style_2 sc_title_regular"><?= Yii::t('main', 'Спектакли') ?></h2>
+                                        <h2 class="sc_title style_2 sc_title_regular">
+                                            <?= Yii::t('main', 'Спектакли') ?>
+                                        </h2>
 
                                     </div>
                                     <div class="sc_blogger sc_blogger_horizontal style_image style_image_classes">
@@ -342,7 +350,7 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                                                         </h4>
                                                         <div class="reviews_summary blog_reviews">
                                                             <div class="criteria_summary criteria_row">
-                                                                <span><?=Yii::t('main','Producer')?>:
+                                                                <span><?= Yii::t('main', 'Producer') ?>:
                                                                     <strong><?= $performance->author ?></strong></span>
                                                             </div>
                                                         </div>
@@ -391,9 +399,9 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                                                                          src="/<?= $artist->photo_path ?>">
                                                                 </div>
                                                                 <div class="sc_team_item_info">
-                                                                    <h3 class="sc_team_item_title"><?=  $artist->fullname ?></h3>
+                                                                    <h3 class="sc_team_item_title"><?= $artist->fullname ?></h3>
                                                                     <div class="sc_team_item_position theme_accent2">
-                                                                        <?= mb_substr($artist->{'description_'.Lang::getCurrent()->url}, 0, 50) ?>
+                                                                        <?= mb_substr($artist->{'description_' . Lang::getCurrent()->url}, 0, 50) ?>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -420,7 +428,7 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                                             <div class="sc_pricing_columns sc_pricing_column_1">
                                                 <ul class="columnsAnimate">
                                                     <li class="sc_pricing_data sc_pricing_title">
-                                                        <?= $repertoire->performance->{'title_'.Lang::getCurrent()->url} ?>
+                                                        <?= $repertoire->performance->{'title_' . Lang::getCurrent()->url} ?>
                                                     </li>
                                                     <?php $datetime = new DateTime($repertoire->date) ?>
                                                     <li class="sc_pricing_data"><?= $datetime->format('d M, Y') ?></li>
@@ -429,7 +437,8 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                                                     <li class="sc_pricing_data"><?= $repertoire->performance->author ?></li>
                                                     <li class="sc_pricing_data">
                                                         <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
-                                                            <a href="<?= Url::to('http://tickit.co') ?>" class=""><?=Yii::t('main','buyTicket')?></a>
+                                                            <a href="<?= Url::to('http://tickit.co') ?>"
+                                                               class=""><?= Yii::t('main', 'buyTicket') ?></a>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -440,7 +449,8 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                                         <div class="">
                                             <div class="sc_button sc_button_style_global sc_button_size_banner squareButton global banner">
                                                 <a style="height: 74px;line-height: 78px;font-size: 23px; padding: 0 12px 0 11px;"
-                                                   href="<?=Url::to('/site/repertoire')?>" class=""><?= Yii::t('main', 'more') ?></a>
+                                                   href="<?= Url::to('/site/repertoire') ?>"
+                                                   class=""><?= Yii::t('main', 'more') ?></a>
                                             </div>
                                         </div>
                                     </div>
