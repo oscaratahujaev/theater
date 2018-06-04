@@ -34,17 +34,20 @@ class Functions
         $path = "uploads/performance/";
         $path .= $title . "/";
 
-
-        $files = scandir($path);
-        foreach ($files as $file) {
-            $ext = pathinfo($path . $file, PATHINFO_EXTENSION);
-            if (in_array($ext, $extensions)) {
-                $arr[] = [
-                    'filename' => $file,
-                    'path' => '/' . $path . $file,
-                ];
+        if (is_dir($path)) {
+            $files = scandir($path);
+            foreach ($files as $file) {
+                $ext = pathinfo($path . $file, PATHINFO_EXTENSION);
+                if (in_array($ext, $extensions)) {
+                    $arr[] = [
+                        'filename' => $file,
+                        'path' => '/' . $path . $file,
+                    ];
+                }
             }
         }
+
+
         return $arr;
     }
 
@@ -57,16 +60,19 @@ class Functions
         $extensions = ['png', 'jpg'];
         $path = "uploads/gallery/";
 
-        $files = scandir($path);
-        foreach ($files as $file) {
-            $ext = pathinfo($path . $file, PATHINFO_EXTENSION);
-            if (in_array($ext, $extensions)) {
-                $arr[] = [
-                    'filename' => $file,
-                    'path' => '/' . $path . $file,
-                ];
+        if (is_dir($path)) {
+            $files = scandir($path);
+            foreach ($files as $file) {
+                $ext = pathinfo($path . $file, PATHINFO_EXTENSION);
+                if (in_array($ext, $extensions)) {
+                    $arr[] = [
+                        'filename' => $file,
+                        'path' => '/' . $path . $file,
+                    ];
+                }
             }
         }
+
         return $arr;
     }
 
