@@ -76,4 +76,27 @@ class Functions
         return $arr;
     }
 
+
+    public static function listGalleryVideo()
+    {
+        $arr = [];
+        $extensions = ['mp4','avi', 'flv', 'wmv', 'mov'];
+        $path = "uploads/gallery/";
+
+        if (is_dir($path)) {
+            $files = scandir($path);
+            foreach ($files as $file) {
+                $ext = pathinfo($path . $file, PATHINFO_EXTENSION);
+                if (in_array($ext, $extensions)) {
+                    $arr[] = [
+                        'filename' => $file,
+                        'path' => '/' . $path . $file,
+                    ];
+                }
+            }
+        }
+
+        return $arr;
+    }
+
 }

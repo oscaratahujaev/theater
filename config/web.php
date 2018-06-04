@@ -26,11 +26,12 @@ $config = [
         'elfinder' => [
             'class' => 'mihaildev\elfinder\Controller',
             'access' => ['@'], //глобальный доступ к фаил менеджеру @ - для авторизорованных , ? - для гостей , чтоб открыть всем ['@', '?']
-            'disabledCommands' => ['netmount'], //отключение ненужных команд https://github.com/Studio-42/elFinder/wiki/Client-configuration-options#commands
+//            'disabledCommands' => ['netmount'], //отключение ненужных команд https://github.com/Studio-42/elFinder/wiki/Client-configuration-options#commands
             'roots' => [
                 [
-                    'baseUrl' => '@web',
-                    'basePath' => '@webroot',
+//                    'baseUrl' => '@web',
+//                    'basePath' => '@webroot',
+                    'class' => 'mihaildev\elfinder\volume\UserPath',
                     'path' => 'uploads/gallery',
                     'name' => 'Галерея'
                 ],

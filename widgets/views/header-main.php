@@ -24,31 +24,31 @@ use yii\helpers\Url;
                 <a href="#" class="openResponsiveMenu">Меню</a>
                 <nav role="navigation" class="menuTopWrap topMenuStyleLine">
                     <ul id="mainmenu" class="">
-                        <li class="menu-item current-menu-ancestor menu-item-has-children">
+                        <li class="menu-item current-menu-ancestor ">
                             <a href="<?= Url::to(['/']) ?>"><?= Yii::t('main', 'home') ?></a>
                         </li>
-                        <li class="menu-item menu-item-has-children">
+                        <li class="menu-item ">
                             <a href="<?= Url::to("/performance/index") ?>"><?= Yii::t('main', 'Спектакли') ?></a>
                         </li>
-                        <li class="menu-item menu-item-has-children columns custom_view_item">
+                        <li class="menu-item  columns custom_view_item">
                             <a title="Tools and Pages" href="<?= Url::to('/site/repertoire') ?>">
                                 <span class="menu_icon icon-params"></span>
                                 <?= Yii::t('main', 'Репертуар') ?>
                             </a>
                         </li>
-                        <li class="menu-item menu-item-has-children columns custom_view_item">
+                        <li class="menu-item  columns custom_view_item">
                             <a title="Tools and Pages" href="<?= Url::to('/site/index#artists') ?>">
                                 <span class="menu_icon icon-params"></span>
                                 <?= Yii::t('main', 'artists') ?>
                             </a>
                         </li>
-                        <li class="menu-item menu-item-has-children">
+                        <li class="menu-item ">
                             <a title="Layouts and hovers" href="<?= Url::to("/site/gallery") ?>">
                                 <span class="menu_icon icon-thumbs-up"></span>
                                 <?= Yii::t('main', 'Галерея') ?>
                             </a>
                         </li>
-                        <li class="menu-item menu-item-has-children">
+                        <li class="menu-item ">
                             <a title="Posts pages" href="<?= Url::to("/site#contacts") ?> ">
                                 <span class="menu_icon icon-note"></span>
                                 <?= Yii::t('main', 'Контакты') ?>

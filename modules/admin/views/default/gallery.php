@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= InputFile::widget([
         'language' => 'ru',
         'controller' => 'elfinder', // вставляем название контроллера, по умолчанию равен elfinder
-        'filter' => 'image',    // фильтр файлов, можно задать массив фильтров https://github.com/Studio-42/elFinder/wiki/Client-configuration-options#wiki-onlyMimes
+        //        'filter' => 'image',    // фильтр файлов, можно задать массив фильтров https://github.com/Studio-42/elFinder/wiki/Client-configuration-options#wiki-onlyMimes
         'name' => 'myinput',
         'template' => '<div class="">{button}</div>',
         'buttonOptions' => ['class' => 'btn btn-success btn-block', 'style' => 'display:block'],
@@ -33,8 +33,24 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
     <div class="admin-image">
+        <h3>Фото</h3>
         <?php foreach ($images as $img): ?>
             <img src="<?= $img['path'] ?>" title="<?= $img['filename'] ?>" class="img-thumbnail img-container">
+        <?php endforeach; ?>
+    </div>
+
+
+    <?php
+    $videos = Functions::listGalleryVideo();
+    ?>
+
+
+    <div class="admin-image">
+        <h3>Видео</h3>
+        <?php foreach ($videos as $item): ?>
+            <video width="400" controls>
+                <source src="<?= $item['path'] ?>">
+            </video>
         <?php endforeach; ?>
     </div>
 

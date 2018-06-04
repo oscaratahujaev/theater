@@ -8,8 +8,10 @@
 /**
  * @var $files
  * */
+use app\components\Functions;
 use yii\helpers\Url;
 
+$this->title = Yii::t('main', 'Галерея');
 ?>
 
 
@@ -61,6 +63,7 @@ use yii\helpers\Url;
                                         vel massa hendrerit congue ac nec ipsum. Maecenas nec risus a lorem malesuada
                                         laoreet. Sed quis ante mollis arcu tincidunt ullamcorper.</p>
                                     <div id="sc_gallery_1" class="sc_gallery columnsWrap">
+                                        <h3><?= Yii::t('main', 'photo') ?></h3>
                                         <?php foreach ($files as $file): ?>
                                             <div class="columns1_5">
                                                 <div class="galleryPic">
@@ -70,6 +73,28 @@ use yii\helpers\Url;
                                                     </div>
                                                     <h4>&nbsp;</h4>
                                                 </div>
+                                            </div>
+                                        <?php endforeach; ?>
+
+                                    </div>
+                                </div>
+
+                                <div class="clearfix"></div>
+
+                                <div class="row" style="margin-bottom:100px;">
+                                    <h3><?= Yii::t('main', 'video') ?></h3>
+
+                                    <?php
+                                    $videos = Functions::listGalleryVideo();
+                                    ?>
+
+
+                                    <div class="admin-image">
+                                        <?php foreach ($videos as $item): ?>
+                                            <div class="my-video">
+                                                <video width="400" controls>
+                                                    <source src="<?= $item['path'] ?>">
+                                                </video>
                                             </div>
                                         <?php endforeach; ?>
                                     </div>
