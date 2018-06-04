@@ -5,7 +5,11 @@
  * Date: 23.05.2018
  * Time: 9:22
  */
-use yii\helpers\Url; ?>
+use app\models\Lang;
+use yii\helpers\Url;
+
+$title_key = 'title_' . Lang::getCurrent()->url;
+?>
 
 <div class="widgetTabs">
     <div id="topOfPage" class="topTabsWrap">
@@ -34,15 +38,16 @@ use yii\helpers\Url; ?>
                             <?php foreach ($repertiores[5]['values'] as $item): ?>
                                 <div class="sc_pricing_columns sc_pricing_column_1">
                                     <ul class="columnsAnimate repertuar">
-                                        <li class="sc_pricing_data sc_pricing_title"><?= $item['title'] . Yii::$app->language ?></li>
+                                        <li class="sc_pricing_data sc_pricing_title"><?= $item[$title_key] ?></li>
                                         <?php $datetime = new DateTime($item['date']) ?>
                                         <li class="sc_pricing_data"><?= $datetime->format('d M, Y') ?></li>
                                         <li class="sc_pricing_data"><?= $item['price'] . ' UZS' ?></li>
                                         <li class="sc_pricing_data">Режиссёр: <?= $item['author'] ?></li>
                                         <div class="sc_pricing_data custom-button">
                                             <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
-                                                <a href="<?= Url::to('http://tickit.co') ?>" class="">Купить
-                                                    Билет</a>
+                                                <a href="<?= Url::to('http://tickit.co') ?>" class="">
+                                                    <?= Yii::t('main', 'buyTicket') ?>
+                                                </a>
                                             </div>
                                         </div>
                                     </ul>
@@ -62,15 +67,17 @@ use yii\helpers\Url; ?>
                                 <?php foreach ($repertiore['values'] as $item): ?>
                                     <div class="sc_pricing_columns sc_pricing_column_1">
                                         <ul class="columnsAnimate repertuar">
-                                            <li class="sc_pricing_data sc_pricing_title"><?= $item['title'] . Yii::$app->language ?></li>
+                                            <li class="sc_pricing_data sc_pricing_title"><?= $item[$title_key] ?></li>
                                             <?php $datetime = new DateTime($item['date']) ?>
                                             <li class="sc_pricing_data"><?= $datetime->format('d M, Y') ?></li>
                                             <li class="sc_pricing_data"><?= $item['price'] . ' UZS' ?></li>
-                                            <li class="sc_pricing_data">Режиссёр: <?= $item['author'] ?></li>
+                                            <li class="sc_pricing_data"><?= Yii::t('main', 'Producer') ?>
+                                                : <?= $item['author'] ?></li>
                                             <div class="sc_pricing_data custom-button">
                                                 <div class="sc_button sc_button_style_global sc_button_size_big squareButton fullSize global big">
-                                                    <a href="<?= Url::to('http://tickit.co') ?>" class="">Купить
-                                                        Билет</a>
+                                                    <a href="<?= Url::to('http://tickit.co') ?>" class="">
+                                                        <?= Yii::t('main', 'buyTicket') ?>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </ul>

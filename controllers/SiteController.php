@@ -178,7 +178,7 @@ class SiteController extends Controller
 
 
         $db = Yii::$app->getDb();
-        $query = $db->createCommand("SELECT *, p.title, p.title_uz,  MONTH(r.date) AS month FROM repertuar r JOIN performance p ON r.performance_id = p.id ORDER BY r.date;");
+        $query = $db->createCommand("SELECT *, p.title_ru, p.title_uz,  MONTH(r.date) AS month FROM repertuar r JOIN performance p ON r.performance_id = p.id ORDER BY r.date;");
         $data = $query->queryAll();
         $repertuars = [];
         for ($i = 1; $i < 13; $i++) {
