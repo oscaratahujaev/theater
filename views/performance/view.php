@@ -1,8 +1,11 @@
+<?php
+use app\models\Lang;
+?>
 <div class="widgetTabs">
     <div id="topOfPage" class="topTabsWrap">
         <div class="main">
             <div class="speedBar">
-                <a class="home" href="<?= \yii\helpers\Url::to(['/']) ?>"><?= Yii::t('main', 'home') ?></a>
+                <a class="home" href="<?=\yii\helpers\Url::to(['/']) ?>"><?= Yii::t('main', 'home') ?></a>
                 <span class="breadcrumbs_delimiter">
 							<i class="icon-right-open-mini"></i>
 						</span>
@@ -11,7 +14,7 @@
                 <span class="breadcrumbs_delimiter">
 							<i class="icon-right-open-mini"></i>
 						</span>
-                <span class="current"><?= $performance->title; ?></span>
+                <span class="current"><?= $performance->{'title_' . Lang::getCurrent()->url}; ?></span>
             </div>
             <h3 class="pageTitle h3"><?= Yii::t('main', 'Спектакли') ?></h3>
         </div>
@@ -28,10 +31,10 @@
                             <article class="post_content">
                                 <div class="post_info infoPost">
                                 </div>
-                                <h1 class="post_title entry-title"><?= $performance->title; ?></h1>
+                                <h1 class="post_title entry-title"><?= $performance->{'title_' . Lang::getCurrent()->url}; ?></h1>
 
                                 <div class="post_text_area">
-                                    <p> <?= $performance->description ?></p>
+                                    <p> <?= $performance->{'description_' . Lang::getCurrent()->url} ?></p>
                                     <h2><?= Yii::t('main', 'artists') ?></h2>
                                     <div>
                                         <?php if (!is_null($performance->performanceArtists)): ?>
@@ -57,7 +60,7 @@
                                                                                 <div class="sc_team_item_info">
                                                                                     <h3 class="sc_team_item_title"><?= $performanceArtist->artist->fullname ?></h3>
                                                                                     <div class="sc_team_item_position theme_accent2">
-                                                                                        <?= substr($performanceArtist->artist->description, 0, 50) ?>
+                                                                                        <?= substr($performanceArtist->artist->{'description_' . Lang::getCurrent()->url}, 0, 50) ?>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>

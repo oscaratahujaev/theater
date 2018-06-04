@@ -1,4 +1,6 @@
 <?php
+use app\components\Functions;
+use app\models\Lang;
 use yii\helpers\Url;
 
 $this->title = Yii::t('main', 'Performances');
@@ -37,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                                     </div>
                                                     <div class="sc_blogger_content">
                                                         <div class="sc_blogger_content_inner">
-                                                            <?= mb_substr($performance->description, 0, 100) ?>
+                                                            <?= mb_substr($performance->{'description_' . Lang::getCurrent()->url}, 0, 100) ?>
                                                             ...
                                                         </div>
                                                     </div>
@@ -45,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                             </div>
                                             <h4 class="sc_blogger_title sc_title">
                                                 <a href="<?= Url::to(['/performance/view/?id=' . $performance->id]) ?>">
-                                                    <?= $performance->title ?>
+                                                    <?= $performance->{'title_' . Lang::getCurrent()->url} ?>
                                                 </a>
 
                                             </h4>

@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\components\Functions;
 use app\models\Artists;
+use app\models\Lang;
 use app\models\Performance;
 use app\models\PerformanceArtist;
 use Codeception\Actor;
@@ -24,13 +25,12 @@ class PerformanceController extends Controller
     public function actionView($id)
     {
         $performance = Performance::find()->where(['id' => $id])->one();
-        $files = Functions::listPerformanceFiles($performance->title);
-
+        $files = Functions::listPerformanceFiles($performance->{'title_' . Lang::getCurrent()->url});
 
 
         $actors = PerformanceArtist::find()->where(['performance_id' => $performance->id])->with('artist')->all();
-//        debug($actors);
-//        exit;
+        //        debug($actors);
+        //        exit;
         return $this->render('view', [
             'performance' => $performance,
             'files' => $files,
