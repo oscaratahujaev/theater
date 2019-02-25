@@ -399,7 +399,7 @@ $this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKJj4C
                                                                          src="/<?= $artist->photo_path ?>">
                                                                 </div>
                                                                 <div class="sc_team_item_info">
-                                                                    <h3 class="sc_team_item_title"><?= $artist->fullname ?></h3>
+                                                                    <h3 class="sc_team_item_title"><?=  $artist->fullname ?></h3>
                                                                     <div class="sc_team_item_position theme_accent2">
                                                                         <?= mb_substr($artist->{'description_' . Lang::getCurrent()->url}, 0, 50) ?>
                                                                     </div>

@@ -1,6 +1,6 @@
 <?php
-use app\components\Functions;
 use app\models\Lang;
+use app\components\Functions;
 use yii\helpers\Url;
 
 $this->title = Yii::t('main', 'Performances');

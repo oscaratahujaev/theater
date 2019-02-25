@@ -28,6 +28,7 @@ class PerformanceController extends Controller
         $files = Functions::listPerformanceFiles($performance->{'title_' . Lang::getCurrent()->url});
 
 
+
         $actors = PerformanceArtist::find()->where(['performance_id' => $performance->id])->with('artist')->all();
         //        debug($actors);
         //        exit;
