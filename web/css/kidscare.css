@@ -603,7 +603,7 @@ pre.code,
 .sidebar.widget_area .tabs_area ul.tabs > li.ui-state-active,
 .sidebar.widget_area .tabs_area ul.tabs > li.ui-state-active a,
 .widget_area .search-form .search-button a:hover
-/*white_bg*/{background-color: #ea624c;}
+/*white_bg*/{background-color: #F05587;}
 
 /* Tribe Events */
 .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"],
@@ -1221,7 +1221,7 @@ header.fixedTopMenu .topWrap .menuTopWrap.topMenuStyleLine > ul#mainmenu > li > 
 .footerWrap.footerStyleDark {}
 
 /*.theme_skin_kidscare .contactFooterWrap.footerStyleLight {background: #ea624c url("../images/object_1.png") no-repeat 50% 100%; color: #ffffff;}*/
-.theme_skin_kidscare .contactFooterWrap.footerStyleLight {background: #ea624c; color: #ffffff;}
+.theme_skin_kidscare .contactFooterWrap.footerStyleLight {background: #F05587; color: #ffffff;}
 /*.theme_skin_kidscare .contactFooterWrap.footerStyleDark {background: #143A43 url("../images/object_1.png") no-repeat 50% 100%; color: #ffffff;}*/
 .theme_skin_kidscare .contactFooterWrap.footerStyleDark {background: #143A43; color: #ffffff;}
 .contactFooterWrap.footerStyleLight .contactAddress {color: #ffffff;}

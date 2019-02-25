@@ -158,3 +158,11 @@ a.desc:after {
     padding: 11px;
     border-top: 1px solid #dddddd;
 }
+
+.rotating {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}

@@ -2,17 +2,18 @@
     <div id="topOfPage" class="topTabsWrap">
         <div class="main">
             <div class="speedBar">
-                <a class="home" href="index-2.html">Home</a>
+                <a class="home" href="<?= \yii\helpers\Url::to(['/']) ?>"><?= Yii::t('main', 'home') ?></a>
                 <span class="breadcrumbs_delimiter">
 							<i class="icon-right-open-mini"></i>
 						</span>
-                <a class="all" href="#">All Posts</a>
+                <a class="all"
+                   href="<?= \yii\helpers\Url::to('/performance/index') ?>"><?= Yii::t('main', 'Спектакли') ?></a>
                 <span class="breadcrumbs_delimiter">
 							<i class="icon-right-open-mini"></i>
 						</span>
-                <span class="current">Pricing Tables</span>
+                <span class="current"><?= $performance->title; ?></span>
             </div>
-            <h3 class="pageTitle h3">Pricing Tables</h3>
+            <h3 class="pageTitle h3"><?= Yii::t('main', 'Спектакли') ?></h3>
         </div>
     </div>
 
@@ -31,7 +32,7 @@
 
                                 <div class="post_text_area">
                                     <p> <?= $performance->description ?></p>
-                                    <h2>Actors</h2>
+                                    <h2><?= Yii::t('main', 'artists') ?></h2>
                                     <div>
                                         <?php if (!is_null($performance->performanceArtists)): ?>
                                             <div class="container blue_section">
@@ -71,7 +72,7 @@
                                         <?php endif; ?>
                                     </div>
                                     <br>
-                                    <h2>Gallery</h2>
+                                    <h2><?= Yii::t('main', 'Галерея') ?></h2>
                                     <div class='gallery gallery_style_1 galleryid-810 gallery-columns-6 gallery-size-thumbnail margin_bottom_mini'>
                                         <?php foreach ($files as $file): ?>
                                             <dl class='gallery-item'>

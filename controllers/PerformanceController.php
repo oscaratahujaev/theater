@@ -27,7 +27,10 @@ class PerformanceController extends Controller
         $files = Functions::listPerformanceFiles($performance->title);
 
 
+
         $actors = PerformanceArtist::find()->where(['performance_id' => $performance->id])->with('artist')->all();
+//        debug($actors);
+//        exit;
         return $this->render('view', [
             'performance' => $performance,
             'files' => $files,

@@ -31,21 +31,22 @@ use yii\helpers\Url;
                             <a href="<?= Url::to("#performance") ?>"><?= Yii::t('main', 'Спектакли') ?></a>
                         </li>
                         <li class="menu-item menu-item-has-children columns custom_view_item">
-                            <a title="Tools and Pages" href="#repertuar">
-                                <span class="menu_icon icon-params"></span>
-                                <?= Yii::t('main', 'Репертуар') ?>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-has-children columns custom_view_item">
                             <a title="Tools and Pages" href="#artists">
                                 <span class="menu_icon icon-params"></span>
                                 <?= Yii::t('main', 'artists') ?>
                             </a>
                         </li>
+                        <li class="menu-item menu-item-has-children columns custom_view_item">
+                            <a title="Tools and Pages" href="#repertuar">
+                                <span class="menu_icon icon-params"></span>
+                                <?= Yii::t('main', 'Репертуар') ?>
+                            </a>
+                        </li>
+
                         <li class="menu-item menu-item-has-children">
-                            <a title="Layouts and hovers" href="<?= Url::to("/gallery/index") ?>">
+                            <a title="Layouts and hovers" href="<?= Url::to("/site/gallery") ?>">
                                 <span class="menu_icon icon-thumbs-up"></span>
-                                <?= Yii::t('main', 'Галерея') ?>
+                                <?= Yii::t('main', 'Галерея') ?> 
                             </a>
                         </li>
                         <li class="menu-item menu-item-has-children">
